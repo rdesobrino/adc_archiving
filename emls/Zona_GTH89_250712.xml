@@ -20,7 +20,7 @@
     </creator>
     <pubDate>2025</pubDate>
     <abstract>
-      <para>This dataset includes an RGB orthomosaic, DEM , and multispectral orthomosaic of Lake 395 Thermokarst  South of Toolik Field Station, for PI Donatella Zona. Imagery was collected by Toolik Field Station GIS Department using a DJI Matrice 210 v2 with DJI Zenmuse x7 24mm RGB sensor  and Ag Eagle Micasense Red Edge MX multispectral sensor. GPS post-processed using KlauPPK.. This data was collected in support of research by PI Donatella Zona on ... (Rachel still has to make a dictionary and fx for project-level metadata).</para>
+      <para>This dataset includes an RGB orthomosaic, DEM , and multispectral orthomosaic of Lake 395 Thermokarst  South of Toolik Field Station, for PI Donatella Zona. Imagery was collected by Toolik Field Station GIS Department using a DJI Matrice 210 v2 with DJI Zenmuse x7 24mm RGB sensor  and Ag Eagle Micasense Red Edge MX multispectral sensor. GPS post-processed using KlauPPK.. This data was collected in support of research by PI Donatella Zona on ....</para>
     </abstract>
     <keywordSet>
       <keyword>Drone</keyword>
@@ -103,13 +103,13 @@
       </methodStep>
       <methodStep>
         <description>
-          <para>UAV flight(s) were conducted with a DJI Matrice 210 v2 at 50 meters altitude at 2.5 m/s with along-track overlap of 80% and across-track overlap of 80%. GPS data were collected with an external PPK antenna (KlauPPK) for each image captured and post-processed using KlauPPK Version 7.22.1 (Klau Geomatics). RGB imagery was captured with a DJI Zenmuse x7 24mm RGB sensor on a gimbal  and Ag Eagle Micasense Red Edge MX was flown nadir with calibration photos taken at the start of each flight, and/or when lighting conditions changed. Flight occurred in cloudy conditions. </para>
+          <para>UAV flight(s) were conducted with a DJI Matrice 210 v2 at 50 meters altitude at 2.5 m/s with along-track overlap of 80% and across-track overlap of 80%. GPS data were collected with an external PPK antenna (KlauPPK) for each image captured and post-processed using KlauPPK Version 7.22.1 (Klau Geomatics). RGB imagery was captured with a DJI Zenmuse x7 24mm RGB sensor on a gimbal  and anAg Eagle Micasense Red Edge MX was flown nadir with calibration photos taken at the start of each flight, and/or when lighting conditions changed. Flight occurred in cloudy conditions. </para>
           <para>Contact ToolikGIS for more information on methodology and data accuracy.</para>
 		</description>
       </methodStep>
       <methodStep>
         <description>
-          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: 0.01 cm, DEM: 0.019 cm , multispectral orthomosaic: 0.042 cm. Data products are in NAD83(2011) / UTM zone 6N and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: 0.01 cm, DEM: 0.019 cm 0.042_desc. Data products are in NAD83(2011) / UTM zone 6N and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
         </description>
       </methodStep>
       <sampling>
@@ -181,21 +181,6 @@
     <spatialRaster id="adc_adc">
       <entityName>Zona_GTH89_x7_dem_250712.tif</entityName>
       <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
-      <physical>
-        <objectName>Zona_GTH89_x7_dem_250712.tif</objectName>
-        <size unit="bytes"></size>
-        <authentication method="MD5">adc_adc</authentication>
-        <dataFormat>
-          <externallyDefinedFormat>
-            <formatName>image/geotiff</formatName>
-          </externallyDefinedFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">adc_adc</url>
-          </online>
-        </distribution>
-      </physical>
       <attributeList>
         <attribute id="adc_adc">  
           <attributeName>Elevation</attributeName>
@@ -297,7 +282,7 @@
         </attribute>
       </attributeList>
       <spatialReference>
-        <horizCoordSysName>hcs</horizCoordSysName>
+        <horizCoordSysName>NAD83(2011) / UTM zone 6N</horizCoordSysName>
       </spatialReference>
       <horizontalAccuracy>
         <accuracyReport>unknown</accuracyReport>
@@ -427,8 +412,8 @@
       <verticalAccuracy>
         <accuracyReport>unknown</accuracyReport>
       </verticalAccuracy>
-      <cellSizeXDirection>, multispectral orthomosaic: 0.042 cm</cellSizeXDirection>
-      <cellSizeYDirection>, multispectral orthomosaic: 0.042 cm</cellSizeYDirection>
+      <cellSizeXDirection>0.042</cellSizeXDirection>
+      <cellSizeYDirection>0.042</cellSizeYDirection>
       <numberOfBands>3</numberOfBands>
       <rasterOrigin>Upper Left</rasterOrigin>
       <rows>10461</rows>

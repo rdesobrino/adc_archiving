@@ -109,7 +109,7 @@
       </methodStep>
       <methodStep>
         <description>
-          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: rgb_res cm, DEM: dem_res cm ms_res. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: rgb_res cm, DEM: dem_res cm ms_res_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
         </description>
       </methodStep>
       <sampling>

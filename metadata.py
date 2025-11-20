@@ -1,7 +1,7 @@
 import os
 
 import argparse
-from adc_archiving.lib import gdalinfo, mapping, format
+from lib import gdalinfo, mapping, format
 import shutil
 import pprint
 

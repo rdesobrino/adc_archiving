@@ -1,8 +1,7 @@
 from osgeo import gdal
 import os
 
-cwd = r"C:\Users\rcdesobrino\Desktop\repos\ADC_archiving\lib\info"
-
+cwd = os.path.join(os.getcwd(), "lib/info")
 gdal.UseExceptions()
 
 def dms_dd(coords): ## transforms coordinates to decimal degrees from dms, as output from gdal

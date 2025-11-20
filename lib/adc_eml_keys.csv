@@ -29,7 +29,8 @@ ms_meth,Text description for multispectral camera methodology ,if ms_true,"ms_v 
 f_wx,,if wx,Flight occurred in wx conditions. ,
 rgb_res,Resolution in meters per pixel of RGB orthomosaic,,,
 dem_res,Resolution in meters per pixel of DSM,,,
-ms_res,Resolution in meters per pixel of multispectral orthomosaic,if_ms true,", multispectral orthomosaic: res cm",
+ms_res,Resolution in meters per pixel of multispectral orthomosaic,,,
+ms_res_desc,Resolution in meters per pixel of multispectral orthomosaic,if_ms true,", multispectral orthomosaic: res cm",
 h_crs,Horizontal Coordinate System,,,
 fteam_1g,Given name of first field team member,optional: if fteam_1g,eg Adam,also add in processor
 fteam_1s,Surname of first field team member,optional: if fteam_1s,eg Chavez,

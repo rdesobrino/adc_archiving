@@ -1,4 +1,4 @@
-from adc_archiving.lib import format
+from lib import format
 import os
 
 def mapper(keys, data_fields):
@@ -37,7 +37,8 @@ def mapper(keys, data_fields):
             keys["rgb_cols"] = str(data_fields["tifs"][tif]["cols"])
         elif data_fields["tifs"][tif]["bands"] >= 3: ## anything over 3 bands should be multispectal
             keys["ms_name"] = os.path.basename(tif)  ## TODO: if not MX camera, metadata different 
-            keys["ms_res"] = ", multispectral orthomosaic: " + str(data_fields["tifs"][tif]["res"]) + " cm"
+            keys["ms_res_desc"] = ", multispectral orthomosaic: " + str(data_fields["tifs"][tif]["res"]) + " cm"
+            keys["ms_res"]= str(data_fields["tifs"][tif]["res"])
             keys["ms_rows"]  = str(data_fields["tifs"][tif]["rows"])
             keys["ms_cols"] = str(data_fields["tifs"][tif]["cols"])
     keys["webo"] = "-" + str(bobo[0][0])

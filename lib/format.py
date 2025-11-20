@@ -1,8 +1,6 @@
 
 import os
 
-cwd = r"C:\Users\rcdesobrino\Desktop\repos\ADC_archiving\lib\info"
-
 def date_descr(date):
     YY = date[0:2]
     MM = date[2:4]

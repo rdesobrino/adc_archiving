@@ -20,7 +20,7 @@
     </creator>
     <pubDate>2025</pubDate>
     <abstract>
-      <para>This dataset includes an RGB orthomosaic, DEM  of TGC3  Galbraith Lake, for PI Sarah Evans. Imagery was collected by Toolik Field Station GIS Department using a DJI Matrice 210 v2 with DJI Zenmuse x7 24mm RGB sensor . GPS post-processed using KlauPPK.. This data was collected in support of research by PI Sarah Evans on ... (Rachel still has to make a dictionary and fx for project-level metadata).</para>
+      <para>This dataset includes an RGB orthomosaic, DEM  of TGC3  Galbraith Lake, for PI Sarah Evans. Imagery was collected by Toolik Field Station GIS Department using a DJI Matrice 210 v2 with DJI Zenmuse x7 24mm RGB sensor . GPS post-processed using KlauPPK.. This data was collected in support of research by PI Sarah Evans on ....</para>
     </abstract>
     <keywordSet>
       <keyword>Drone</keyword>
@@ -109,7 +109,7 @@
       </methodStep>
       <methodStep>
         <description>
-          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: 0.017 cm, DEM: 0.034 cm . Data products are in NAD83(2011) / UTM zone 6N and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: 0.017 cm, DEM: 0.034 cm _desc. Data products are in NAD83(2011) / UTM zone 6N and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
         </description>
       </methodStep>
       <sampling>
@@ -181,21 +181,6 @@
     <spatialRaster id="adc_adc">
       <entityName>Evans_Galbraith_x7_DEM_240612.tif</entityName>
       <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
-      <physical>
-        <objectName>Evans_Galbraith_x7_DEM_240612.tif</objectName>
-        <size unit="bytes"></size>
-        <authentication method="MD5">adc_adc</authentication>
-        <dataFormat>
-          <externallyDefinedFormat>
-            <formatName>image/geotiff</formatName>
-          </externallyDefinedFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">adc_adc</url>
-          </online>
-        </distribution>
-      </physical>
       <attributeList>
         <attribute id="adc_adc">  
           <attributeName>Elevation</attributeName>
@@ -297,7 +282,7 @@
         </attribute>
       </attributeList>
       <spatialReference>
-        <horizCoordSysName>hcs</horizCoordSysName>
+        <horizCoordSysName>NAD83(2011) / UTM zone 6N</horizCoordSysName>
       </spatialReference>
       <horizontalAccuracy>
         <accuracyReport>unknown</accuracyReport>
