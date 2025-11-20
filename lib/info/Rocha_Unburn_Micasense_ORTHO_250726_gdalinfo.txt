@@ -1,0 +1,183 @@
+Driver: GTiff/GeoTIFF
+Files: Z:\2025_Work\UAS_Processing\Rocha_Adrian\Unburn\1_Products\Rocha_Unburn_Micasense_ORTHO_250726.tif
+       Z:\2025_Work\UAS_Processing\Rocha_Adrian\Unburn\1_Products\Rocha_Unburn_Micasense_ORTHO_250726.tif.aux.xml
+Size is 8659, 9051
+Coordinate System is:
+BOUNDCRS[
+    SOURCECRS[
+        PROJCRS["NAD83(2011) / UTM zone 6N",
+            BASEGEOGCRS["NAD83(2011)",
+                DATUM["NAD83 (National Spatial Reference System 2011)",
+                    ELLIPSOID["GRS 1980",6378137,298.257222101004,
+                        LENGTHUNIT["metre",1]]],
+                PRIMEM["Greenwich",0,
+                    ANGLEUNIT["degree",0.0174532925199433]],
+                ID["EPSG",6318]],
+            CONVERSION["UTM zone 6N",
+                METHOD["Transverse Mercator",
+                    ID["EPSG",9807]],
+                PARAMETER["Latitude of natural origin",0,
+                    ANGLEUNIT["degree",0.0174532925199433],
+                    ID["EPSG",8801]],
+                PARAMETER["Longitude of natural origin",-147,
+                    ANGLEUNIT["degree",0.0174532925199433],
+                    ID["EPSG",8802]],
+                PARAMETER["Scale factor at natural origin",0.9996,
+                    SCALEUNIT["unity",1],
+                    ID["EPSG",8805]],
+                PARAMETER["False easting",500000,
+                    LENGTHUNIT["metre",1],
+                    ID["EPSG",8806]],
+                PARAMETER["False northing",0,
+                    LENGTHUNIT["metre",1],
+                    ID["EPSG",8807]]],
+            CS[Cartesian,2],
+                AXIS["easting",east,
+                    ORDER[1],
+                    LENGTHUNIT["metre",1]],
+                AXIS["northing",north,
+                    ORDER[2],
+                    LENGTHUNIT["metre",1]],
+            ID["EPSG",6335]]],
+    TARGETCRS[
+        GEOGCRS["WGS 84",
+            DATUM["World Geodetic System 1984",
+                ELLIPSOID["WGS 84",6378137,298.257223563,
+                    LENGTHUNIT["metre",1]]],
+            PRIMEM["Greenwich",0,
+                ANGLEUNIT["degree",0.0174532925199433]],
+            CS[ellipsoidal,2],
+                AXIS["latitude",north,
+                    ORDER[1],
+                    ANGLEUNIT["degree",0.0174532925199433]],
+                AXIS["longitude",east,
+                    ORDER[2],
+                    ANGLEUNIT["degree",0.0174532925199433]],
+            ID["EPSG",4326]]],
+    ABRIDGEDTRANSFORMATION["Transformation from NAD83(2011) to WGS84",
+        METHOD["Position Vector transformation (geog2D domain)",
+            ID["EPSG",9606]],
+        PARAMETER["X-axis translation",0,
+            ID["EPSG",8605]],
+        PARAMETER["Y-axis translation",0,
+            ID["EPSG",8606]],
+        PARAMETER["Z-axis translation",0,
+            ID["EPSG",8607]],
+        PARAMETER["X-axis rotation",0,
+            ID["EPSG",8608]],
+        PARAMETER["Y-axis rotation",0,
+            ID["EPSG",8609]],
+        PARAMETER["Z-axis rotation",0,
+            ID["EPSG",8610]],
+        PARAMETER["Scale difference",1,
+            ID["EPSG",8611]]]]
+Data axis to CRS axis mapping: 1,2
+Origin = (368791.867062254343182,7650513.063793282955885)
+Pixel Size = (0.023875900000002,-0.023875900000003)
+Metadata:
+  AREA_OR_POINT=Area
+Image Structure Metadata:
+  COMPRESSION=LZW
+  INTERLEAVE=PIXEL
+Corner Coordinates:
+Upper Left  (  368791.867, 7650513.064) (150d16'19.95"W, 68d56' 2.81"N)
+Lower Left  (  368791.867, 7650296.963) (150d16'18.92"W, 68d55'55.84"N)
+Upper Right (  368998.608, 7650513.064) (150d16' 1.43"W, 68d56' 3.17"N)
+Lower Right (  368998.608, 7650296.963) (150d16' 0.39"W, 68d55'56.20"N)
+Center      (  368895.238, 7650405.013) (150d16'10.17"W, 68d55'59.50"N)
+Band 1 Block=256x256 Type=Float32, ColorInterp=Gray
+  Min=0.000 Max=0.253 
+  Minimum=0.000, Maximum=0.253, Mean=0.030, StdDev=0.015
+  NoData Value=-999
+  Overviews: 4330x4526, 2165x2263, 1083x1132, 542x566, 271x283, 136x142
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=42489636.000000
+    STATISTICS_COVARIANCES=0.0002143970854924813,0.0003133007400804403,0.0003690124353029861,0.000562666290393886,0.000739120097317517,-0.0009789885138060889
+    STATISTICS_MAXIMUM=0.2526490688324
+    STATISTICS_MEAN=0.030229409322081
+    STATISTICS_MEDIAN=0.027761
+    STATISTICS_MINIMUM=2.1508982172236e-05
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=0.014642304650993
+Band 2 Block=256x256 Type=Float32, ColorInterp=Undefined
+  Min=0.000 Max=0.490 
+  Minimum=0.000, Maximum=0.490, Mean=0.063, StdDev=0.024
+  NoData Value=-999
+  Overviews: 4330x4526, 2165x2263, 1083x1132, 542x566, 271x283, 136x142
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=42489636.000000
+    STATISTICS_COVARIANCES=0.0003133007400804403,0.0005943721805347707,0.00057083835612749,0.001248395859102252,0.001938610879682482,-0.001089668269721017
+    STATISTICS_MAXIMUM=0.48960450291634
+    STATISTICS_MEAN=0.063149831253098
+    STATISTICS_MEDIAN=0.061524
+    STATISTICS_MINIMUM=9.4887232990004e-05
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=0.024379749394421
+Band 3 Block=256x256 Type=Float32, ColorInterp=Undefined
+  Min=0.000 Max=0.513 
+  Minimum=0.000, Maximum=0.513, Mean=0.053, StdDev=0.027
+  NoData Value=-999
+  Overviews: 4330x4526, 2165x2263, 1083x1132, 542x566, 271x283, 136x142
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=42489636.000000
+    STATISTICS_COVARIANCES=0.0003690124353029861,0.00057083835612749,0.0007495028749810779,0.001082883573124977,0.001411537579266537,-0.001998674054846092
+    STATISTICS_MAXIMUM=0.51258313655853
+    STATISTICS_MEAN=0.052711001442353
+    STATISTICS_MEDIAN=0.046233
+    STATISTICS_MINIMUM=0
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=0.027377050151196
+Band 4 Block=256x256 Type=Float32, ColorInterp=Undefined
+  Min=0.002 Max=0.833 
+  Minimum=0.002, Maximum=0.833, Mean=0.183, StdDev=0.058
+  NoData Value=-999
+  Overviews: 4330x4526, 2165x2263, 1083x1132, 542x566, 271x283, 136x142
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=42489636.000000
+    STATISTICS_COVARIANCES=0.000562666290393886,0.001248395859102252,0.001082883573124977,0.003364104923170649,0.005694739289218765,-0.001084760705422347
+    STATISTICS_MAXIMUM=0.83270984888077
+    STATISTICS_MEAN=0.18257405919911
+    STATISTICS_MEDIAN=0.181035
+    STATISTICS_MINIMUM=0.0018247063271701
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=0.058000904503039
+Band 5 Block=256x256 Type=Float32, ColorInterp=Undefined
+  Min=0.024 Max=0.876 
+  Minimum=0.024, Maximum=0.876, Mean=0.354, StdDev=0.104
+  NoData Value=-999
+  Overviews: 4330x4526, 2165x2263, 1083x1132, 542x566, 271x283, 136x142
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=42489636.000000
+    STATISTICS_COVARIANCES=0.000739120097317517,0.001938610879682482,0.001411537579266537,0.005694739289218765,0.01091659493976489,0.0003409656050854732
+    STATISTICS_MAXIMUM=0.8761699795723
+    STATISTICS_MEAN=0.35436118259696
+    STATISTICS_MEDIAN=0.354677
+    STATISTICS_MINIMUM=0.023729756474495
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=0.10448251020991
+Band 6 Block=256x256 Type=Float32, ColorInterp=Undefined
+  Min=-0.157 Max=1.000 
+  Minimum=-0.157, Maximum=1.000, Mean=0.745, StdDev=0.090
+  NoData Value=-999
+  Overviews: 4330x4526, 2165x2263, 1083x1132, 542x566, 271x283, 136x142
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=42489636.000000
+    STATISTICS_COVARIANCES=-0.0009789885138060889,-0.001089668269721017,-0.001998674054846092,-0.001084760705422347,0.0003409656050854732,0.008089303812910776
+    STATISTICS_MAXIMUM=1
+    STATISTICS_MEAN=0.74509713663291
+    STATISTICS_MEDIAN=0.754911
+    STATISTICS_MINIMUM=-0.15736402571201
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=0.089940557108074

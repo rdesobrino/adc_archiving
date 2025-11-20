@@ -1,0 +1,51 @@
+key,description,conditionals,example,notes to Rachel
+s_site,study site,,"Moist Acidic Tundra Snowfence site, Hershey Creek",
+l_area,local area ,optional,", South of Toolik Field Station"," "", local area"""
+date_desc,text description of the flight date,,"eg 25 July, 2025 ",written out from YYMMDD
+ms_desc,hard-encoded text statement adding multispec to products list,if ms_true," "", and multispectral orthomosaic""",
+pi_name,"name of the PI, First Last",,"Donatella Zona, Ruby An",
+drone_v,"text description of drone make, model, version",,DJI Matrice 210 v2,
+rgb_v,text description of the RGB camera,,DJI Zenmuse x7 24mm RGB sensor,
+ms_v,text description of multispectral camera ,if ms_true," "" and Micasense Red-Edge MX multispectral sensor""",
+klau_desc,,if_klau true,"""GPS post-processed using KlauPPK.""",
+kword_desc,"descriptive keywords describing the overall research project, in the format of ""to support research on <<>>""",,"eg ""plant phenology, shrub expansion, and plant responses to warming""",
+kword_1,FGDC-formatted keyword describing the dataset ,optional,,"from a list, eg [permafrost, vegetation, soils] but FGDC"
+kword_2,FGDC-formatted keyword describing the dataset ,optional,,"from a list, eg [permafrost, vegetation, soils] but FGDC"
+kword_3,FGDC-formatted keyword describing the dataset ,optional,,"from a list, eg [permafrost, vegetation, soils] but FGDC"
+webo,Longitudinal coordinate in decimal degrees of northwest bounding box coordinate,,,
+ebo,Longitudinal coordinate in decimal degrees of southeast bounding box coordinate,,,
+nobo,Latitudinal coordinate in decimal degrees of northwest bounding box coordinate,,,
+sobo,Latitudinal coordinate in decimal degrees of southeast bounding box coordinate,,,
+hyph_date,Flight date formatted as YYYY-MM-DD,,eg 2022-07-19,from YYMMDD
+f_start,Flight start time in 00:00 format,optional,,
+f_stop,Flight stop time in 00:00 format,optional,,
+f_alt,Flight altitude in meters,,,
+f_spd,Flight speed in meters per second,,,
+f_flap,Forward overlap of UAV flight,,,
+f_slap,Side overlap of UAV flight ,,,
+klau_meth,Text description of methodology for Klau PPK system,if klau_true,GPS data were collected with an external PPK antenna (KlauPPK) for each image captured and post-processed using KlauPPK Version 7.22.1 (Klau Geomatics). ,
+rgb_meth,Text description for RGB camera methodology ,#NAME?,rgb_v on a gimbal,
+ms_meth,Text description for multispectral camera methodology ,if ms_true,"ms_v was flown nadir with calibration photos taken at the start of each flight, and/or when lighting conditions changed",
+f_wx,,if wx,Flight occurred in wx conditions. ,
+rgb_res,Resolution in meters per pixel of RGB orthomosaic,,,
+dem_res,Resolution in meters per pixel of DSM,,,
+ms_res,Resolution in meters per pixel of multispectral orthomosaic,if_ms true,", multispectral orthomosaic: res cm",
+h_crs,Horizontal Coordinate System,,,
+fteam_1g,Given name of first field team member,optional: if fteam_1g,eg Adam,also add in processor
+fteam_1s,Surname of first field team member,optional: if fteam_1s,eg Chavez,
+fteam_2g,Given name of second field team member,optional: if fteam_2g,,
+fteam_2s,Surname of second field team member,optional: if fteam_2s,,
+fteam_3g,Given name of third field team member,optional: if fteam_3g,,
+fteam_3s,Surname of third field team member,optional: if fteam_3s,,
+pi_proj,Title of research project the UAV work was in support of,,,
+pi_name_g,Given name of project PI,,"pi_name.split("" "")[0]",
+pi_name_s,Surname of project PI,,"pi_name.split("" "")[1]",
+dem_name,Filename of DEM raster,,Zona_GTH89_x7_DEM_250712.tif,
+dem_rows,Number of rows in the DEM raster,,,
+dem_cols,Number of columns in the DEM raster,,,
+rgb_name,Filename of RGB orthomosaic raster ,,,
+rgb_rows,Number of rows in the RGB orthomosaic raster,,,
+rgb_cols,Number of columns in the RGB orthomosaic raster,,,
+ms_name,Filename of multispectral orthomosaic raster,if_ms true,,"if ms_true, read lib/ms_spatialRaster.txt, replace ms fields, and insert right above </dataset>"
+ms_rows,Number of rows in the multispectral orthomosaic raster,if_ms true,,
+ms_cols,Number of columns in the multispectral orthomosaic raster,if_ms true,,

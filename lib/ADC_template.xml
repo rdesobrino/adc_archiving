@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:ffa9eec8-8737-4c33-9bdc-84672638169c" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
+  <dataset id="adc_adc">
+    <title>Orthomosaics and Digital Elevation Model of s_sitel_area, Alaska on date_desc</title>
+    <creator id= "adc_adc">
+      <individualName>
+        <givenName>Rachel</givenName>
+        <surName>de Sobrino</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
+        <city>FAIRBANKS</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99775</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>rcdesobrino@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">http://orcid.org/0009-0001-0642-3296</userId>
+    </creator>
+    <pubDate>2025</pubDate>
+    <abstract>
+      <para>This dataset includes an RGB orthomosaic, DEM ms_desc of s_site l_area, for PI pi_name. Imagery was collected by Toolik Field Station GIS Department using a drone_v with rgb_v ms_v. klau_desc. This data was collected in support of research by PI pi_name on kword_desc.</para>
+    </abstract>
+    <keywordSet>
+      <keyword>Drone</keyword>
+      <keyword>UAV</keyword>
+      <keyword>Alaska</keyword>
+      <keyword>Arctic</keyword>
+      <keyword>kword_1</keyword>
+	  <keyword>kword_2</keyword>
+	  <keyword>kword_3</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This work is dedicated to the public domain under the Creative Commons Universal 1.0 Public Domain Dedication. To view a copy of this dedication, visit https://creativecommons.org/publicdomain/zero/1.0/.</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>s_site l_area, Alaska</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>webo</westBoundingCoordinate>
+          <eastBoundingCoordinate>ebo</eastBoundingCoordinate>
+          <northBoundingCoordinate>nobo</northBoundingCoordinate>
+          <southBoundingCoordinate>sobo</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>hyph_date</calendarDate>
+			<time>f_start</time>
+          </beginDate>
+          <endDate>
+            <calendarDate>hyph_date</calendarDate>
+			<time>f_stop</time>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <annotation>
+      <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
+      <valueURI label="Geoscience">https://purl.dataone.org/odo/ADCAD_00038</valueURI>
+    </annotation>
+    <annotation>
+      <propertyURI label="Data Sensitivity Category">http://purl.dataone.org/odo/SENSO_00000005</propertyURI>
+      <valueURI label="Non-sensitive data">http://purl.dataone.org/odo/SENSO_00000002</valueURI>
+    </annotation>
+    <annotation>
+      <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
+      <valueURI label="Cryology">https://purl.dataone.org/odo/ADCAD_00080</valueURI>
+    </annotation>
+    <contact id="adc_adc">
+      <individualName>
+        <givenName>Toolik Field Station</givenName>
+        <surName>GIS Department</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
+        <city>FAIRBANKS</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99775</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>uaf-iab-tfs-gis@alaska.edu </electronicMailAddress>
+      <userId directory="https://orcid.org"></userId>
+    </contact>
+    <publisher id="8315836021741415">
+      <organizationName>NSF Arctic Data Center</organizationName>
+      <electronicMailAddress>support@arcticdata.io</electronicMailAddress>
+      <onlineUrl>http://arcticdata.io</onlineUrl>
+      <userId directory="unknown">Q77285095</userId>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Ethical Research Practices</title>
+            <para>Drone pilots maintain an active Part 107 certification and followed all local airspace regulations. Work was conducted on land managed by either the Bureau of Land Management or Alaska Department of Natural Resources with the appropriate permitting and authorization.All equipment was removed from the field and efforts were made to limit the impacts of human travel across the tundra landscape.</para>
+          </section>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>UAV flight(s) were conducted with a drone_v at f_alt meters altitude at f_spd m/s with along-track overlap of f_flap% and across-track overlap of f_slap%. klau_meth RGB imagery was captured with a rgb_meth ms_meth. f_wx </para>
+          <para>Contact ToolikGIS for more information on methodology and data accuracy.</para>
+		</description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: rgb_res cm, DEM: dem_res cm ms_res. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+        </description>
+      </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>UAV flight of s_site l_area, Alaska at field site selected by PI pi_name. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Elevation Model of s_site l_area, Alaska" or contact Toolik Field Station GIS for availability.</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para></para>
+        </samplingDescription>
+      </sampling>
+    </methods>
+    <project>
+      <title>Toolik Field Station Base Funding</title>
+      <personnel>
+        <individualName>
+          <givenName>Rachel</givenName>
+          <surName>de Sobrino</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Randy</givenName>
+          <surName>Fulweber</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>fteam_1g</givenName>
+          <surName>fteam_1s</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+	        <personnel>
+        <individualName>
+          <givenName>fteam_2g</givenName>
+          <surName>fteam_2s</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+	        <personnel>
+        <individualName>
+          <givenName>fteam_3g</givenName>
+          <surName>fteam_3s</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+      <award>
+        <funderName>National Science Foundation</funderName>
+        <funderIdentifier>https://doi.org/10.13039/100000001</funderIdentifier>
+        <awardNumber>2221133</awardNumber>
+        <title>Toolik Field Station Base Funding</title>
+        <awardUrl>https://www.nsf.gov/awardsearch/showAward?AWD_ID=2221133</awardUrl>
+      </award>
+	  </project>
+	  <project>
+      <title>pi_proj</title>
+	  <personnel>
+        <individualName>
+          <givenName>pi_gname</givenName>
+          <surName>pi_sname</surName>
+        </individualName>
+        <role>principalInvestigator</role>
+      </personnel>
+    </project>
+    <spatialRaster id="adc_adc">
+      <entityName>dem_name</entityName>
+      <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
+      <physical>
+        <objectName>dem_name</objectName>
+        <size unit="bytes"></size>
+        <authentication method="MD5">adc_adc</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>image/geotiff</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">adc_adc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="adc_adc">  
+          <attributeName>Elevation</attributeName>
+          <attributeDefinition>Digital Surface Model; Elevation units are meters above mean sea level.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="elevation">http://purl.dataone.org/odo/ECSO_00001567</valueURI>
+          </annotation>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>h_crs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>dem_res</cellSizeXDirection>
+      <cellSizeYDirection>dem_res</cellSizeYDirection>
+      <numberOfBands>1</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>18109</rows>
+      <columns>17740</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster>
+    <spatialRaster id="adc_adc">
+      <entityName>rgb_name</entityName>
+      <entityDescription>RGB Orthomosaic. Red (Band 1), Green (Band 2), Blue (Band 3).</entityDescription>
+      <physical>
+        <objectName>rgb_name</objectName>
+        <size unit="bytes"></size>
+        <authentication method="MD5">adc_adc</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>image/geotiff</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">adc_adc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+	   <attribute id="adc_adc">
+          <attributeName>Red</attributeName>
+          <attributeDefinition>Red band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="adc_adc">
+          <attributeName>Green</attributeName>
+          <attributeDefinition>Green band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+       <attribute id="adc_adc">
+          <attributeName>Blue</attributeName>
+          <attributeDefinition>Blue band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>hcs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>rgb_res</cellSizeXDirection>
+      <cellSizeYDirection>rgb_res</cellSizeYDirection>
+      <numberOfBands>3</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>rgb_rows</rows>
+      <columns>rgb_cols</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster>
+  </dataset>
+</eml:eml>

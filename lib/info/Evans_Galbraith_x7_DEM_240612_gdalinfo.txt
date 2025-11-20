@@ -1,0 +1,85 @@
+Driver: GTiff/GeoTIFF
+Files: Z:\2024_Work\UAS_Processing\Evans_Sarah\Evans_Galbraith_240612\_Products\Evans_Galbraith_x7_DEM_240612.tif
+       Z:\2024_Work\UAS_Processing\Evans_Sarah\Evans_Galbraith_240612\_Products\Evans_Galbraith_x7_DEM_240612.tif.aux.xml
+Size is 12099, 18237
+Coordinate System is:
+COMPOUNDCRS["NAD83(2011) / UTM zone 6N + NAVD88 height",
+    PROJCRS["NAD83(2011) / UTM zone 6N",
+        BASEGEOGCRS["NAD83(2011)",
+            DATUM["NAD83 (National Spatial Reference System 2011)",
+                ELLIPSOID["GRS 1980",6378137,298.257222101,
+                    LENGTHUNIT["metre",1]]],
+            PRIMEM["Greenwich",0,
+                ANGLEUNIT["degree",0.0174532925199433]],
+            ID["EPSG",6318]],
+        CONVERSION["UTM zone 6N",
+            METHOD["Transverse Mercator",
+                ID["EPSG",9807]],
+            PARAMETER["Latitude of natural origin",0,
+                ANGLEUNIT["degree",0.0174532925199433],
+                ID["EPSG",8801]],
+            PARAMETER["Longitude of natural origin",-147,
+                ANGLEUNIT["degree",0.0174532925199433],
+                ID["EPSG",8802]],
+            PARAMETER["Scale factor at natural origin",0.9996,
+                SCALEUNIT["unity",1],
+                ID["EPSG",8805]],
+            PARAMETER["False easting",500000,
+                LENGTHUNIT["metre",1],
+                ID["EPSG",8806]],
+            PARAMETER["False northing",0,
+                LENGTHUNIT["metre",1],
+                ID["EPSG",8807]]],
+        CS[Cartesian,2],
+            AXIS["(E)",east,
+                ORDER[1],
+                LENGTHUNIT["metre",1]],
+            AXIS["(N)",north,
+                ORDER[2],
+                LENGTHUNIT["metre",1]],
+        USAGE[
+            SCOPE["Engineering survey, topographic mapping."],
+            AREA["United States (USA) - between 150°W and 144°W - Alaska and offshore continental shelf (OCS)."],
+            BBOX[54.05,-150,74.13,-143.99]],
+        ID["EPSG",6335]],
+    VERTCRS["NAVD88 height",
+        VDATUM["North American Vertical Datum 1988"],
+        CS[vertical,1],
+            AXIS["gravity-related height (H)",up,
+                LENGTHUNIT["metre",1]],
+        USAGE[
+            SCOPE["Geodesy, engineering survey, topographic mapping."],
+            AREA["Mexico - onshore. United States (USA) - CONUS and Alaska - onshore - Alabama; Alaska; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],
+            BBOX[14.51,172.42,71.4,-66.91]],
+        ID["EPSG",5703]]]
+Data axis to CRS axis mapping: 1,2,3
+Origin = (398286.281212266767398,7600743.323677287437022)
+Pixel Size = (0.033501800000001,-0.033501800000000)
+Metadata:
+  AREA_OR_POINT=Area
+  DataType=Generic
+Image Structure Metadata:
+  COMPRESSION=LZW
+  INTERLEAVE=BAND
+Corner Coordinates:
+Upper Left  (  398286.281, 7600743.324) (149d29'14.89"W, 68d30' 2.49"N)
+Lower Left  (  398286.281, 7600132.351) (149d29'12.72"W, 68d29'42.78"N)
+Upper Right (  398691.619, 7600743.324) (149d28'39.24"W, 68d30' 3.02"N)
+Lower Right (  398691.619, 7600132.351) (149d28'37.08"W, 68d29'43.31"N)
+Center      (  398488.950, 7600437.838) (149d28'55.98"W, 68d29'52.90"N)
+Band 1 Block=256x256 Type=Float32, ColorInterp=Gray
+  Min=808.581 Max=855.141 
+  Minimum=808.581, Maximum=855.141, Mean=830.154, StdDev=12.874
+  NoData Value=-999
+  Overviews: 6050x9119, 3025x4560, 1513x2280, 757x1140, 379x570, 190x285, 95x143
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=215178301.000000
+    STATISTICS_COVARIANCES=165.7447913913406
+    STATISTICS_MAXIMUM=855.14147949219
+    STATISTICS_MEAN=830.1542128422
+    STATISTICS_MEDIAN=829.761583
+    STATISTICS_MINIMUM=808.58123779297
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=12.874190902396

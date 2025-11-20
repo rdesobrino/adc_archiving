@@ -1,0 +1,103 @@
+Driver: GTiff/GeoTIFF
+Files: Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_Hershey_250801\1_Products\Deegan_Hershey_x7_dem_250822.tif
+       Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_Hershey_250801\1_Products\Deegan_Hershey_x7_dem_250822.tif.aux.xml
+Size is 15747, 17956
+Coordinate System is:
+BOUNDCRS[
+    SOURCECRS[
+        PROJCRS["NAD83(2011) / UTM zone 6N",
+            BASEGEOGCRS["NAD83(2011)",
+                DATUM["NAD83 (National Spatial Reference System 2011)",
+                    ELLIPSOID["GRS 1980",6378137,298.257222101004,
+                        LENGTHUNIT["metre",1]]],
+                PRIMEM["Greenwich",0,
+                    ANGLEUNIT["degree",0.0174532925199433]],
+                ID["EPSG",6318]],
+            CONVERSION["UTM zone 6N",
+                METHOD["Transverse Mercator",
+                    ID["EPSG",9807]],
+                PARAMETER["Latitude of natural origin",0,
+                    ANGLEUNIT["degree",0.0174532925199433],
+                    ID["EPSG",8801]],
+                PARAMETER["Longitude of natural origin",-147,
+                    ANGLEUNIT["degree",0.0174532925199433],
+                    ID["EPSG",8802]],
+                PARAMETER["Scale factor at natural origin",0.9996,
+                    SCALEUNIT["unity",1],
+                    ID["EPSG",8805]],
+                PARAMETER["False easting",500000,
+                    LENGTHUNIT["metre",1],
+                    ID["EPSG",8806]],
+                PARAMETER["False northing",0,
+                    LENGTHUNIT["metre",1],
+                    ID["EPSG",8807]]],
+            CS[Cartesian,2],
+                AXIS["easting",east,
+                    ORDER[1],
+                    LENGTHUNIT["metre",1]],
+                AXIS["northing",north,
+                    ORDER[2],
+                    LENGTHUNIT["metre",1]],
+            ID["EPSG",6335]]],
+    TARGETCRS[
+        GEOGCRS["WGS 84",
+            DATUM["World Geodetic System 1984",
+                ELLIPSOID["WGS 84",6378137,298.257223563,
+                    LENGTHUNIT["metre",1]]],
+            PRIMEM["Greenwich",0,
+                ANGLEUNIT["degree",0.0174532925199433]],
+            CS[ellipsoidal,2],
+                AXIS["latitude",north,
+                    ORDER[1],
+                    ANGLEUNIT["degree",0.0174532925199433]],
+                AXIS["longitude",east,
+                    ORDER[2],
+                    ANGLEUNIT["degree",0.0174532925199433]],
+            ID["EPSG",4326]]],
+    ABRIDGEDTRANSFORMATION["Transformation from NAD83(2011) to WGS84",
+        METHOD["Position Vector transformation (geog2D domain)",
+            ID["EPSG",9606]],
+        PARAMETER["X-axis translation",0,
+            ID["EPSG",8605]],
+        PARAMETER["Y-axis translation",0,
+            ID["EPSG",8606]],
+        PARAMETER["Z-axis translation",0,
+            ID["EPSG",8607]],
+        PARAMETER["X-axis rotation",0,
+            ID["EPSG",8608]],
+        PARAMETER["Y-axis rotation",0,
+            ID["EPSG",8609]],
+        PARAMETER["Z-axis rotation",0,
+            ID["EPSG",8610]],
+        PARAMETER["Scale difference",1,
+            ID["EPSG",8611]]]]
+Data axis to CRS axis mapping: 1,2
+Origin = (401339.233341693936381,7616226.084071093238890)
+Pixel Size = (0.031225800000000,-0.031225800000012)
+Metadata:
+  AREA_OR_POINT=Area
+Image Structure Metadata:
+  COMPRESSION=LZW
+  INTERLEAVE=BAND
+Corner Coordinates:
+Upper Left  (  401339.233, 7616226.084) (149d25'40.15"W, 68d38'25.86"N)
+Lower Left  (  401339.233, 7615665.394) (149d25'38.19"W, 68d38' 7.77"N)
+Upper Right (  401830.946, 7616226.084) (149d24'56.64"W, 68d38'26.49"N)
+Lower Right (  401830.946, 7615665.394) (149d24'54.69"W, 68d38' 8.40"N)
+Center      (  401585.090, 7615945.739) (149d25'17.41"W, 68d38'17.13"N)
+Band 1 Block=256x256 Type=Float32, ColorInterp=Gray
+  Min=774.539 Max=796.182 
+  Minimum=774.539, Maximum=796.182, Mean=785.875, StdDev=5.221
+  NoData Value=-999
+  Overviews: 7874x8978, 3937x4489, 1969x2245, 985x1123, 493x562, 247x281, 124x141
+  Unit Type: metre
+  Metadata:
+    STATISTICS_COUNT=133796729.000000
+    STATISTICS_COVARIANCES=27.25804092974751
+    STATISTICS_MAXIMUM=796.18231201172
+    STATISTICS_MEAN=785.87544868676
+    STATISTICS_MEDIAN=784.893681
+    STATISTICS_MINIMUM=774.53869628906
+    STATISTICS_SKIPFACTORX=1
+    STATISTICS_SKIPFACTORY=1
+    STATISTICS_STDDEV=5.2209233790344

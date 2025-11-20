@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:ffa9eec8-8737-4c33-9bdc-84672638169c" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
+  <dataset id="adc_adc">
+    <title>Orthomosaics and Digital Elevation Model of Hershey Creek , Alaska on 01 August, 2025</title>
+    <creator id= "adc_adc">
+      <individualName>
+        <givenName>Rachel</givenName>
+        <surName>de Sobrino</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
+        <city>FAIRBANKS</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99775</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>rcdesobrino@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">http://orcid.org/0009-0001-0642-3296</userId>
+    </creator>
+    <pubDate>2025</pubDate>
+    <abstract>
+      <para>This dataset includes an RGB orthomosaic, DEM , and multispectral orthomosaic of Hershey Creek  , for PI Linda Deegan. Imagery was collected by Toolik Field Station GIS Department using a DJI Matrice 210 v2 with DJI Zenmuse x7 24mm RGB sensor  and Ag Eagle Micasense Red Edge MX multispectral sensor. GPS post-processed using KlauPPK.. This data was collected in support of research by PI Linda Deegan on ... (Rachel still has to make a dictionary and fx for project-level metadata).</para>
+    </abstract>
+    <keywordSet>
+      <keyword>Drone</keyword>
+      <keyword>UAV</keyword>
+      <keyword>Alaska</keyword>
+      <keyword>Arctic</keyword>
+      <keyword></keyword>
+	  <keyword></keyword>
+	  <keyword></keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This work is dedicated to the public domain under the Creative Commons Universal 1.0 Public Domain Dedication. To view a copy of this dedication, visit https://creativecommons.org/publicdomain/zero/1.0/.</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Hershey Creek  , Alaska</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-149.427819</westBoundingCoordinate>
+          <eastBoundingCoordinate>-149.415192</eastBoundingCoordinate>
+          <northBoundingCoordinate>68.640517</northBoundingCoordinate>
+          <southBoundingCoordinate>68.635667</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2025-08-01</calendarDate>
+			<time>13:51</time>
+          </beginDate>
+          <endDate>
+            <calendarDate>2025-08-01</calendarDate>
+			<time>14:18</time>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <annotation>
+      <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
+      <valueURI label="Geoscience">https://purl.dataone.org/odo/ADCAD_00038</valueURI>
+    </annotation>
+    <annotation>
+      <propertyURI label="Data Sensitivity Category">http://purl.dataone.org/odo/SENSO_00000005</propertyURI>
+      <valueURI label="Non-sensitive data">http://purl.dataone.org/odo/SENSO_00000002</valueURI>
+    </annotation>
+    <annotation>
+      <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
+      <valueURI label="Cryology">https://purl.dataone.org/odo/ADCAD_00080</valueURI>
+    </annotation>
+    <contact id="adc_adc">
+      <individualName>
+        <givenName>Toolik Field Station</givenName>
+        <surName>GIS Department</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
+        <city>FAIRBANKS</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99775</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>uaf-iab-tfs-gis@alaska.edu </electronicMailAddress>
+      <userId directory="https://orcid.org"></userId>
+    </contact>
+    <publisher id="8315836021741415">
+      <organizationName>NSF Arctic Data Center</organizationName>
+      <electronicMailAddress>support@arcticdata.io</electronicMailAddress>
+      <onlineUrl>http://arcticdata.io</onlineUrl>
+      <userId directory="unknown">Q77285095</userId>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Ethical Research Practices</title>
+            <para>Drone pilots maintain an active Part 107 certification and followed all local airspace regulations. Work was conducted on land managed by either the Bureau of Land Management or Alaska Department of Natural Resources with the appropriate permitting and authorization.All equipment was removed from the field and efforts were made to limit the impacts of human travel across the tundra landscape.</para>
+          </section>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>UAV flight(s) were conducted with a DJI Matrice 210 v2 at 100 meters altitude at 5.1 m/s with along-track overlap of 80% and across-track overlap of 80%. GPS data were collected with an external PPK antenna (KlauPPK) for each image captured and post-processed using KlauPPK Version 7.22.1 (Klau Geomatics). RGB imagery was captured with a DJI Zenmuse x7 24mm RGB sensor on a gimbal  and Ag Eagle Micasense Red Edge MX was flown nadir with calibration photos taken at the start of each flight, and/or when lighting conditions changed. Flight occurred in sunny conditions. </para>
+          <para>Contact ToolikGIS for more information on methodology and data accuracy.</para>
+		</description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: 0.016 cm, DEM: 0.031 cm , multispectral orthomosaic: 0.069 cm. Data products are in NAD83(2011) / UTM zone 6N and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+        </description>
+      </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>UAV flight of Hershey Creek  , Alaska at field site selected by PI Linda Deegan. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Elevation Model of Hershey Creek  , Alaska" or contact Toolik Field Station GIS for availability.</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para></para>
+        </samplingDescription>
+      </sampling>
+    </methods>
+    <project>
+      <title>Toolik Field Station Base Funding</title>
+      <personnel>
+        <individualName>
+          <givenName>Rachel</givenName>
+          <surName>de Sobrino</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Randy</givenName>
+          <surName>Fulweber</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Adam</givenName>
+          <surName>Chavez</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+	        <personnel>
+        <individualName>
+          <givenName>Jorge</givenName>
+          <surName>Noguera</surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+	        <personnel>
+        <individualName>
+          <givenName></givenName>
+          <surName></surName>
+        </individualName>
+        <role>Creator</role>
+      </personnel>
+      <award>
+        <funderName>National Science Foundation</funderName>
+        <funderIdentifier>https://doi.org/10.13039/100000001</funderIdentifier>
+        <awardNumber>2221133</awardNumber>
+        <title>Toolik Field Station Base Funding</title>
+        <awardUrl>https://www.nsf.gov/awardsearch/showAward?AWD_ID=2221133</awardUrl>
+      </award>
+	  </project>
+	  <project>
+      <title>... (Rachel to add)</title>
+	  <personnel>
+        <individualName>
+          <givenName>Linda</givenName>
+          <surName>Deegan</surName>
+        </individualName>
+        <role>principalInvestigator</role>
+      </personnel>
+    </project>
+    <spatialRaster id="adc_adc">
+      <entityName>Deegan_Hershey_x7_dem_250822.tif</entityName>
+      <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
+      <physical>
+        <objectName>Deegan_Hershey_x7_dem_250822.tif</objectName>
+        <size unit="bytes"></size>
+        <authentication method="MD5">adc_adc</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>image/geotiff</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">adc_adc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="adc_adc">  
+          <attributeName>Elevation</attributeName>
+          <attributeDefinition>Digital Surface Model; Elevation units are meters above mean sea level.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="elevation">http://purl.dataone.org/odo/ECSO_00001567</valueURI>
+          </annotation>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>NAD83(2011) / UTM zone 6N</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>0.031</cellSizeXDirection>
+      <cellSizeYDirection>0.031</cellSizeYDirection>
+      <numberOfBands>1</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>18109</rows>
+      <columns>17740</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster>
+    <spatialRaster id="adc_adc">
+      <entityName>Deegan_Hershey_x7_ortho_250822.tif</entityName>
+      <entityDescription>RGB Orthomosaic. Red (Band 1), Green (Band 2), Blue (Band 3).</entityDescription>
+      <physical>
+        <objectName>Deegan_Hershey_x7_ortho_250822.tif</objectName>
+        <size unit="bytes"></size>
+        <authentication method="MD5">adc_adc</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>image/geotiff</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">adc_adc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+	   <attribute id="adc_adc">
+          <attributeName>Red</attributeName>
+          <attributeDefinition>Red band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="adc_adc">
+          <attributeName>Green</attributeName>
+          <attributeDefinition>Green band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+       <attribute id="adc_adc">
+          <attributeName>Blue</attributeName>
+          <attributeDefinition>Blue band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>hcs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>0.016</cellSizeXDirection>
+      <cellSizeYDirection>0.016</cellSizeYDirection>
+      <numberOfBands>3</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>31495</rows>
+      <columns>31495</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster>
+  <spatialRaster id="adc_adc">
+      <entityName>Deegan_Hershey_micasense_ortho_250822.tif</entityName>
+      <entityDescription>Multispectral Orthomosaic. Blue (Band 1 - 475 nm center, 32 nm bandwidth), Green (Band 2 - 560 nm center, 27 nm bandwidth), Red (Band 3 - 668 nm center, 14 nm bandwidth), Red Edge (Band 4 - 717 nm center, 12 nm bandwidth), Near-IR (Band 5 - 842 nm center, 57 nm bandwidth), Normalized Difference Vegetation Index (Band 6).</entityDescription>
+      <physical>
+        <objectName>Deegan_Hershey_micasense_ortho_250822.tif</objectName>
+        <size unit="bytes"></size>
+        <authentication method="MD5">adc_adc</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>image/geotiff</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">adc_adc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="adc_adc">
+          <attributeName>Blue</attributeName>
+          <attributeDefinition>Blue (475 nm center, 32 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="adc_adc">
+          <attributeName>Green</attributeName>
+          <attributeDefinition>Green (560 nm center, 27 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="adc_adc">
+          <attributeName>Red</attributeName>
+          <attributeDefinition>Red (668 nm center, 14 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+		        <attribute id="adc_adc">
+          <attributeName>Red Edge</attributeName>
+          <attributeDefinition>Red edge (717 nm center, 12 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+		        <attribute id="adc_adc">
+          <attributeName>Near-IR</attributeName>
+          <attributeDefinition>Near-IR (842 nm center, 57 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+		        <attribute id="adc_adc">
+          <attributeName>NDVI</attributeName>
+          <attributeDefinition>Normalized Difference Vegetation Index</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>hcs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>, multispectral orthomosaic: 0.069 cm</cellSizeXDirection>
+      <cellSizeYDirection>, multispectral orthomosaic: 0.069 cm</cellSizeYDirection>
+      <numberOfBands>3</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>7045</rows>
+      <columns>7045</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster></dataset>
+</eml:eml>
