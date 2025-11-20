@@ -181,21 +181,6 @@
     <spatialRaster id="adc_adc">
       <entityName>dem_name</entityName>
       <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
-      <physical>
-        <objectName>dem_name</objectName>
-        <size unit="bytes"></size>
-        <authentication method="MD5">adc_adc</authentication>
-        <dataFormat>
-          <externallyDefinedFormat>
-            <formatName>image/geotiff</formatName>
-          </externallyDefinedFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">adc_adc</url>
-          </online>
-        </distribution>
-      </physical>
       <attributeList>
         <attribute id="adc_adc">  
           <attributeName>Elevation</attributeName>
@@ -297,7 +282,7 @@
         </attribute>
       </attributeList>
       <spatialReference>
-        <horizCoordSysName>hcs</horizCoordSysName>
+        <horizCoordSysName>h_crs</horizCoordSysName>
       </spatialReference>
       <horizontalAccuracy>
         <accuracyReport>unknown</accuracyReport>

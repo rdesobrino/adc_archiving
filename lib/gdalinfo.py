@@ -51,7 +51,7 @@ def get_gdal(tif_path):  ##
     data = {}
     data["hcs"] = get_hcs(info)  ##TODO: no VCS?!
     data["res"] = get_res(info)
-    data["bands"] = get_bands(info)
+    data["bands"] = get_bands(info)  ## TODO: returning 3 for multispec
     data["rows"] = get_rows(info)
     data["cols"] = get_cols(info)
     data["bobo"] = bobo(info)

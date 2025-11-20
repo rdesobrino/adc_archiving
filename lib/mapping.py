@@ -4,7 +4,7 @@ import os
 def mapper(keys, data_fields):
     for key in keys.keys():  ## handles all key-matching that does not require additional formatting
         if key in data_fields:
-            keys[key] = data_fields[key]
+            keys[key] = data_fields[key] ##TODO: time into UTC (i.e. 11:50 -> 11:50:00-09:00)
 
     keys["l_area"] = " " + data_fields["l_area"]
     keys["date_desc"] = format.date_descr(data_fields["date"])
