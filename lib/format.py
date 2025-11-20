@@ -15,7 +15,7 @@ def hyphenate_date(date):
     return "20" + YY + "-" + MM + "-" + DD
 
 def team_name(initials): ## Rd and RF included as dataset creators by default
-    team = {"Rd" : " ", "RF": " ", "JN": "Jorge Noguera", "AC":"Adam Chavez"}
+    team = {"Rd" : " ", "RF": " ", "JN": "Jorge Noguera", "AC":"Adam Chavez"}  ##TODO: add as encounter new flight team
     if initials in team:
         return team[initials]
     else:

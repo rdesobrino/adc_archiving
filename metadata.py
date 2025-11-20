@@ -16,7 +16,7 @@ if  __name__ == "__main__":
     args = parser.parse_args()
 
     csv = args.i
-    fields_dic = {}
+    fields_dic = {} ## populate dictionary with input fields from user
     with open(csv, "r") as f:
         fields_list = f.readline().strip().split(',')
         for dataset in f.readlines():
@@ -26,13 +26,13 @@ if  __name__ == "__main__":
                 for i in range(len(fields)):
                     fields_dic[fields[0]][fields_list[i]] = fields[i]
 
-    for dataset in fields_dic:
+    for dataset in fields_dic: ## populate dictionary with dataset-specific (raster) metadata
         fields_dic[dataset]["tifs"] = {}
         fprod = fields_dic[dataset]["fprod"].replace('"','')
         for file in os.listdir(fprod):
             file = os.path.join(fprod, file)
             if file.upper().endswith('.TIF'):
-                fields_dic[dataset]["tifs"][file] = gdalinfo.get_gdal(file)
+                fields_dic[dataset]["tifs"][file] = gdalinfo.get_gdal(file)  ## creates raster metadata file from gdal
 
         with open(os.path.join(cwd, r"lib\ADC_template.xml"), "r") as template:
             template = template.read()
@@ -48,12 +48,12 @@ if  __name__ == "__main__":
         # with open(os.path.join(fprod, fields_dic[dataset]["fname"] + ".xml"), "w") as eml: ##TODO swap abck when out of testing
         with open(os.path.join(cwd, "emls", fields_dic[dataset]["fname"] + ".xml"), "w") as eml:
             print("Processing ", dataset)
-            mapped = mapping.mapper(keys, fields_dic[dataset])
-            for key in mapped.keys():
+            mapped = mapping.mapper(keys, fields_dic[dataset]) ## map keys to appropriate values
+            for key in mapped.keys():  ## replace keywords with values
                 template = template.replace(key, mapped[key])
                 ms_template = ms_template.replace(key, mapped[key])
             start = template.find("</dataset>")
-            eml.write(template[:start])
+            eml.write(template[:start])  ## write new file
             if mapped["ms_desc"] != "":  ## TODO , implemet same logic for dem and rgb
                 eml.write(ms_template)
             eml.write(template[start:])

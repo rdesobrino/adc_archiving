@@ -21,7 +21,7 @@ def mapper(keys, data_fields):
     keys["kword_1"] = "" ## TODO how serious do I want to be about keyword dictionaries
     keys["kword_2"] = ""
     keys["kword_3"] = ""
-
+    ## raster specific metadata
     for tif in data_fields["tifs"]:
         bobo = data_fields["tifs"][tif]["bobo"] ## only need one bounding box, RGB and MS will be slightly different but ah well
         keys["h_crs"] = data_fields["tifs"][tif]["hcs"] ## assumes all rasters are in same crs for description, but each gets written separately at data-level
