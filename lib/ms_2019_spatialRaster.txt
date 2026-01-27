@@ -1,0 +1,122 @@
+<spatialRaster id="adc_adc">
+      <entityName>ms_name</entityName>
+      <entityDescription>Multispectral Orthomosaic. Blue (Band 1 - 475 nm center, 20 nm bandwidth), Green (Band 2 - 560 nm center, 20 nm bandwidth), Red (Band 3 - 668 nm center, 10 nm bandwidth), Red Edge (Band 4 - 717 nm center, 10 nm bandwidth), Near-IR (Band 5 - 840 nm center, 40 nm bandwidth), Normalized Difference Vegetation Index (Band 6).</entityDescription>
+      <physical>
+        <objectName>ms_name</objectName>
+        <size unit="bytes"></size>
+        <authentication method="MD5">adc_adc</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>image/geotiff</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">adc_adc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="adc_adc">
+          <attributeName>Blue</attributeName>
+          <attributeDefinition>Blue (475 nm center, 20 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="adc_adc">
+          <attributeName>Green</attributeName>
+          <attributeDefinition>Green (560 nm center, 20 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="adc_adc">
+          <attributeName>Red</attributeName>
+          <attributeDefinition>Red (668 nm center, 10 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+		        <attribute id="adc_adc">
+          <attributeName>Red Edge</attributeName>
+          <attributeDefinition>Red edge (717 nm center, 10 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+		        <attribute id="adc_adc">
+          <attributeName>Near-IR</attributeName>
+          <attributeDefinition>Near-IR (840 nm center, 40 nm bandwidth)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+		        <attribute id="adc_adc">
+          <attributeName>NDVI</attributeName>
+          <attributeDefinition>Normalized Difference Vegetation Index</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>hcs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>ms_res</cellSizeXDirection>
+      <cellSizeYDirection>ms_res</cellSizeYDirection>
+      <numberOfBands>3</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>ms_rows</rows>
+      <columns>ms_cols</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster>

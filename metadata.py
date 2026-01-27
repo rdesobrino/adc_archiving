@@ -11,7 +11,7 @@ if  __name__ == "__main__":
     cwd = os.getcwd()
 
     parser = argparse.ArgumentParser(description="""Produce metadata xml for ToolikGIS drone products""")
-    parser.add_argument("-i", help=" : input csv file(s) to process")
+    parser.add_argument("-i", help=" : input csv file(s) to process") ## TODO do I really want to require an input csv??
     parser.add_argument("-o", help=" : Output metadata folder", default = os.path.join(cwd, "emls"))
     args = parser.parse_args()
 
@@ -25,6 +25,18 @@ if  __name__ == "__main__":
                 fields_dic[fields[0]] = {}
                 for i in range(len(fields)):
                     fields_dic[fields[0]][fields_list[i]] = fields[i]
+
+    projects = r"C:\Users\rcdesobrino\Desktop\repos\ADC_archiving\adc_archiving\lib\projects.txt"
+    projects_dic = {} # populate dictionary with standard list of projects
+    with open(projects, "r") as f:
+        fields_list = f.readline().strip().split('\t')
+        for dataset in f.readlines():
+            fields = dataset.strip().split("\t")
+            if fields[0] != "":
+                fields[0]=fields[0].strip()
+                projects_dic[fields[0]] = {}
+                for i in range(len(fields)):
+                    projects_dic[fields[0]][fields_list[i]] = fields[i].replace('"', "").strip()
 
     for dataset in fields_dic: ## populate dictionary with dataset-specific (raster) metadata
         fields_dic[dataset]["tifs"] = {}
@@ -45,18 +57,28 @@ if  __name__ == "__main__":
             for line in f.readlines():
                 keys[line.split(",")[0]] = ""
 
-        # with open(os.path.join(fprod, fields_dic[dataset]["fname"] + ".xml"), "w") as eml: ##TODO swap abck when out of testing
+        # with open(os.path.join(fprod, fields_dic[dataset]["fname"] + ".xml"), "w") as eml: ##TODO swap back and forth between implementation. avoid accidentally overwrite manually-edited files.
         with open(os.path.join(cwd, "emls", fields_dic[dataset]["fname"] + ".xml"), "w") as eml:
             print("Processing ", dataset)
-            mapped = mapping.mapper(keys, fields_dic[dataset]) ## map keys to appropriate values
+            mapped = mapping.mapper(keys, fields_dic[dataset], projects_dic) ## map keys to appropriate values
             for key in mapped.keys():  ## replace keywords with values
                 template = template.replace(key, mapped[key])
                 ms_template = ms_template.replace(key, mapped[key])
-            start = template.find("</dataset>")
-            eml.write(template[:start])  ## write new file
-            if mapped["ms_desc"] != "":  ## TODO , implemet same logic for dem and rgb
+            start = template.find("</creator>")+len("</creator>")
+            eml.write(template[:start])
+            if mapped["fteam"] != "":
+                eml.write(mapped["fteam"])
+
+            nsf = template.find("</project")
+            eml.write(template[start:nsf])
+            if mapped["project_info"] != "":
+                eml.write(mapped["project_info"])
+
+            multi = template.find("</dataset>")
+            eml.write(template[nsf:multi])  ## write new file
+            if mapped["ms_desc"] != "":  ## TODO , implement same logic for rgb and dem, how many cases?
                 eml.write(ms_template)
-            eml.write(template[start:])
+            eml.write(template[multi:])
 
 
 

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:ffa9eec8-8737-4c33-9bdc-84672638169c" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
   <dataset id="adc_adc">
-    <title>Orthomosaics and Digital Elevation Model of s_sitel_area, Alaska on date_desc</title>
-    <creator id= "adc_adc">
+    <title>Orthomosaics and Digital Surface Model of s_sitel_area, Alaska on date_desc</title>
+    <creator id="1221893104692641">
       <individualName>
         <givenName>Rachel</givenName>
         <surName>de Sobrino</surName>
       </individualName>
       <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+	  <positionName>GIS and Remote Sensing Analyst</positionName>
       <address>
         <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
         <city>FAIRBANKS</city>
@@ -18,9 +19,19 @@
       <electronicMailAddress>rcdesobrino@alaska.edu</electronicMailAddress>
       <userId directory="https://orcid.org">http://orcid.org/0009-0001-0642-3296</userId>
     </creator>
+	<creator id="4874726551979884">
+      <individualName>
+        <givenName>Randy</givenName>
+        <surName>Fulweber</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+	  <positionName>GIS and Remote Sensing Manager</positionName>
+      <electronicMailAddress>rafulweber@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-0537-4194</userId>
+    </creator>
     <pubDate>2025</pubDate>
     <abstract>
-      <para>This dataset includes an RGB orthomosaic, DEM ms_desc of s_site l_area, for PI pi_name. Imagery was collected by Toolik Field Station GIS Department using a drone_v with rgb_v ms_v. klau_desc. This data was collected in support of research by PI pi_name on kword_desc.</para>
+      <para>This dataset includes an RGB orthomosaic, Digital Surface Modelms_desc of s_sitel_area, for PI pi_name. Imagery was collected by the Toolik Field Station GIS Department using a drone_v quadcopter with a rgb_v ms_v. klau_descThis data was collected in support of research by PI pi_name on kword_desc.</para>
     </abstract>
     <keywordSet>
       <keyword>Drone</keyword>
@@ -37,7 +48,7 @@
     </intellectualRights>
     <coverage>
       <geographicCoverage>
-        <geographicDescription>s_site l_area, Alaska</geographicDescription>
+        <geographicDescription>s_sitel_area, Alaska</geographicDescription>
         <boundingCoordinates>
           <westBoundingCoordinate>webo</westBoundingCoordinate>
           <eastBoundingCoordinate>ebo</eastBoundingCoordinate>
@@ -97,25 +108,25 @@
         <description>
           <section>
             <title>Ethical Research Practices</title>
-            <para>Drone pilots maintain an active Part 107 certification and followed all local airspace regulations. Work was conducted on land managed by either the Bureau of Land Management or Alaska Department of Natural Resources with the appropriate permitting and authorization.All equipment was removed from the field and efforts were made to limit the impacts of human travel across the tundra landscape.</para>
+            <para>Drone pilots maintain an active Part 107 certification and followed all local airspace regulations. Work was conducted on land managed by either the Bureau of Land Management or Alaska Department of Natural Resources with the appropriate permitting and authorization. All equipment was removed from the field and efforts were made to limit the impacts of human travel across the tundra landscape.</para>
           </section>
         </description>
       </methodStep>
       <methodStep>
         <description>
           <para>UAV flight(s) were conducted with a drone_v at f_alt meters altitude at f_spd m/s with along-track overlap of f_flap% and across-track overlap of f_slap%. klau_meth RGB imagery was captured with a rgb_meth ms_meth. f_wx </para>
-          <para>Contact ToolikGIS for more information on methodology and data accuracy.</para>
+          <para>Contact uaf-iab-tfs-gis@alaska.edu for more information on methodology and data accuracy.</para>
 		</description>
       </methodStep>
       <methodStep>
         <description>
-          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow developed with consultation from Agisoft help. The spatial resolution of the data products are: RGB orthomosaic: rgb_res cm, DEM: dem_res cm ms_res_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow described in in the Agisoft Metashape Users Manual (Agisoft LLC, 2022). The spatial resolution of the data products are: RGB orthomosaic: rgb_resm, DSM: dem_resm ms_px_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
         </description>
       </methodStep>
       <sampling>
         <studyExtent>
           <description>
-            <para>UAV flight of s_site l_area, Alaska at field site selected by PI pi_name. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Elevation Model of s_site l_area, Alaska" or contact Toolik Field Station GIS for availability.</para>
+            <para>UAV flight of s_sitel_area, Alaska at field site selected by PI pi_name. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Surface Model of s_sitel_area, Alaska" or contact Toolik Field Station GIS for availability.</para>
           </description>
         </studyExtent>
         <samplingDescription>
@@ -125,41 +136,6 @@
     </methods>
     <project>
       <title>Toolik Field Station Base Funding</title>
-      <personnel>
-        <individualName>
-          <givenName>Rachel</givenName>
-          <surName>de Sobrino</surName>
-        </individualName>
-        <role>Creator</role>
-      </personnel>
-      <personnel>
-        <individualName>
-          <givenName>Randy</givenName>
-          <surName>Fulweber</surName>
-        </individualName>
-        <role>Creator</role>
-      </personnel>
-      <personnel>
-        <individualName>
-          <givenName>fteam_1g</givenName>
-          <surName>fteam_1s</surName>
-        </individualName>
-        <role>Creator</role>
-      </personnel>
-	        <personnel>
-        <individualName>
-          <givenName>fteam_2g</givenName>
-          <surName>fteam_2s</surName>
-        </individualName>
-        <role>Creator</role>
-      </personnel>
-	        <personnel>
-        <individualName>
-          <givenName>fteam_3g</givenName>
-          <surName>fteam_3s</surName>
-        </individualName>
-        <role>Creator</role>
-      </personnel>
       <award>
         <funderName>National Science Foundation</funderName>
         <funderIdentifier>https://doi.org/10.13039/100000001</funderIdentifier>
@@ -168,16 +144,6 @@
         <awardUrl>https://www.nsf.gov/awardsearch/showAward?AWD_ID=2221133</awardUrl>
       </award>
 	  </project>
-	  <project>
-      <title>pi_proj</title>
-	  <personnel>
-        <individualName>
-          <givenName>pi_gname</givenName>
-          <surName>pi_sname</surName>
-        </individualName>
-        <role>principalInvestigator</role>
-      </personnel>
-    </project>
     <spatialRaster id="adc_adc">
       <entityName>dem_name</entityName>
       <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>

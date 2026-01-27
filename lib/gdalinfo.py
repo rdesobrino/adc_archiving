@@ -1,7 +1,8 @@
 from osgeo import gdal
 import os
 
-cwd = os.path.join(os.getcwd(), "lib/info")
+os.chdir(os.path.split(os.path.abspath(__file__))[0])
+cwd = os.path.join(os.getcwd(), "info")
 gdal.UseExceptions()
 
 def dms_dd(coords): ## transforms coordinates to decimal degrees from dms, as output from gdal
@@ -26,7 +27,7 @@ def get_hcs(info):
 
 def get_res(info):
     res = info[info.find("Pixel Size = (") + len("Pixel Size = ("):].split(',')[0]
-    return round(float(res), 3) ## TODO confirm I like rounding to 3
+    return round(float(res), 3) ##
 
 def get_bands(info):
     bands = 0
@@ -48,7 +49,7 @@ def get_gdal(tif_path):  ##
         info = gdal.Info(tif_path)  ## awrsom,e now save as txt and then pull bounding box etc
         text.write(info)
     data = {}
-    data["hcs"] = get_hcs(info)  ##TODO: no VCS?!
+    data["hcs"] = get_hcs(info)  
     data["res"] = get_res(info)
     data["bands"] = get_bands(info)  ## TODO: returning 3 for multispec
     data["rows"] = get_rows(info)

@@ -1,0 +1,38 @@
+PI	project_name	funder	award_no	kword_desc	kword_1	kword_2	kword_3
+Donatella Zona	Towards Filling a Major Gap in the Greenhouse Gas Balance From the Arctic: Defining the Importance of N2O Emission in the North Slope of Alaska	NSF	2149988	N20 emissions from ground disturbance	N2O	permafrost	soils
+Adrian Rocha	Long Term Research in Environmental Biology	NSF	2103539	ecosystem recovery after the 2007 Anaktuvuk River burn	succession	wildfire	fluxes
+Steve Oberbauer	International Tundra Experiment - Arctic Observatory Network (ITEX-AON)	NSF	1836897	a long-term network analysis of tundra ecosystem change	phenology	carbon flux	nutrient cycling
+Jeremy May 	International Tundra Experiment - Arctic Observatory Network (ITEX-AON)	NSF	1836897	a long-term network analysis of tundra ecosystem change	phenology	carbon flux	nutrient cycling
+Craig Tweedie	International Tundra Experiment - Arctic Observatory Network (ITEX-AON)	NSF	1836897	a long-term network analysis of tundra ecosystem change	phenology	carbon flux	nutrient cycling
+Roxaneh Khorsand	International Tundra Experiment - Arctic Observatory Network (ITEX-AON)	NSF	1836897	a long-term network analysis of tundra ecosystem change	phenology	carbon flux	nutrient cycling
+Syndonia Bret-Harte	Arctic Observatory Network  - Carbon Flux	NSF	1936751	"the carbon, water, and energy balance of the Arctic landscape at flagship observatories in Alaska and Siberia"	phenology	carbon flux	permafrost
+Colin Edgar	Arctic Observatory Network  - Carbon Flux	NSF	1936751	"the carbon, water, and energy balance of the Arctic landscape at flagship observatories in Alaska and Siberia"	phenology	carbon flux	permafrost
+Kyoko Okano	Arctic Observatory Network  - Carbon Flux	NSF	1936751	"the carbon, water, and energy balance of the Arctic landscape at flagship observatories in Alaska and Siberia"	phenology	carbon flux	permafrost
+Ruby An				"plant phenology, shrub expansion, and plant responses to warming"	shrubs	phenology	warming
+Sarah Evans	NSF Collaborative Research: RUI: Zero-order to first-order: Hydrologic drivers of surface-subsurface storage dynamics in thawing permafrost landscapes	NSF	2102338	hillslope saturation patterns on the North Slope of Alaska	permafrost	watertracks	gullies
+Cansu Culha	NSF Collaborative Research: RUI: Zero-order to first-order: Hydrologic drivers of surface-subsurface storage dynamics in thawing permafrost landscapes	NSF	2102338	hillslope saturation patterns on the North Slope of Alaska	permafrost	watertracks	gullies
+Krystyna Koziol	"""PER2Water – PERsistent organic pollutant remobilisation from PERmafrost into surface Waters"""		2021/41/B/ST10/02947				
+Amanda Young							
+Randy Fulweber							
+Bradley Gay							
+Brian Barnes							
+Breck Bowden							
+Calbin Heslop 							
+Dave Emerson							
+Ed Rastetter							
+Ellen Dorrepaal							
+Gesche Blume-Werry							
+George Kling							
+Go Iwahana							
+Gus Jesperson							
+Jeff Welker							
+Jeremy May 							
+Jim Laundre							
+Kazem Dogaheh							
+Laura Gough							
+Linda Deegan							
+Mauro Guglielmin							
+Mike Weintraub							
+Natalie Boelman							
+Torre Jorgenson 	Collaborative Research: The Transition Zone of Upper Permafrost: The Frontline for Permafrost Changes across Climate and Landscape Gradients	NSF	1820883	the transition zone of tundra permafrost	permafrost	ground ice	
+Yuri Shur 	Collaborative Research: The Transition Zone of Upper Permafrost: The Frontline for Permafrost Changes across Climate and Landscape Gradients	NSF	1820883	the transition zone of tundra permafrost	permafrost	ground ice	
