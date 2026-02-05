@@ -21,8 +21,17 @@ def bobo(info):
         bb.append(dms_dd(search[2:]))
     return bb
 
+def centroid(info):
+    center = info[info.find("Origin = (") + len("Origin = ("):].split(")")[0]
+    return center
+
 def get_hcs(info):
-    hcs = info[info.find("PROJCRS[") + len("PROJCRS["):].split('"')[1]
+    hcs = info[info.find("PROJCRS[") + len("PROJCRS["):].split('"')[1] ##TODO change user-read format?
+    if hcs == "NAD83(2011) / UTM zone 6N":
+        return "NAD_1983_UTM_Zone_6N"
+    elif hcs == "NAD83(2011) / UTM zone 5N":
+        return "NAD_1983_UTM_Zone_5N"
+    print("Change HCS to comply with https://eml.ecoinformatics.org/schema/eml-spatialreference_xsd#SpatialReferenceType_horizCoordSysName")
     return hcs
 
 def get_res(info):
@@ -49,11 +58,12 @@ def get_gdal(tif_path):  ##
         info = gdal.Info(tif_path)  ## awrsom,e now save as txt and then pull bounding box etc
         text.write(info)
     data = {}
-    data["hcs"] = get_hcs(info)  
+    data["hcs"] = get_hcs(info)
     data["res"] = get_res(info)
     data["bands"] = get_bands(info)  ## TODO: returning 3 for multispec
     data["rows"] = get_rows(info)
     data["cols"] = get_cols(info)
     data["bobo"] = bobo(info)
+    data["center"] = centroid(info)
     return data
 

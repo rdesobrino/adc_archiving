@@ -1,4 +1,4 @@
-PI	project_name	funder	award_no	kword_desc	kword_1	kword_2	kword_3
+PI	project_name	fund_agency	award_no	kword_desc	kword_1	kword_2	kword_3
 Donatella Zona	Towards Filling a Major Gap in the Greenhouse Gas Balance From the Arctic: Defining the Importance of N2O Emission in the North Slope of Alaska	NSF	2149988	N20 emissions from ground disturbance	N2O	permafrost	soils
 Adrian Rocha	Long Term Research in Environmental Biology	NSF	2103539	ecosystem recovery after the 2007 Anaktuvuk River burn	succession	wildfire	fluxes
 Steve Oberbauer	International Tundra Experiment - Arctic Observatory Network (ITEX-AON)	NSF	1836897	a long-term network analysis of tundra ecosystem change	phenology	carbon flux	nutrient cycling

@@ -24,7 +24,7 @@ if  __name__ == "__main__":
             if fields[0] != "":
                 fields_dic[fields[0]] = {}
                 for i in range(len(fields)):
-                    fields_dic[fields[0]][fields_list[i]] = fields[i]
+                    fields_dic[fields[0]][fields_list[i]] = fields[i].strip()
 
     projects = r"C:\Users\rcdesobrino\Desktop\repos\ADC_archiving\adc_archiving\lib\projects.txt"
     projects_dic = {} # populate dictionary with standard list of projects

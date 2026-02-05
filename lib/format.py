@@ -1,5 +1,6 @@
 
 import os
+import random
 cwd = os.getcwd()
 
 def date_descr(date):
@@ -14,6 +15,12 @@ def hyphenate_date(date):
     MM = date[2:4]
     DD = date[4:6]
     return "20" + YY + "-" + MM + "-" + DD
+
+def attr_id():
+    id = ""
+    for i in range(30):
+        id += str(random.randint(0, 9))
+    return id
 
 def make_creators(initials): ## Rd and RF included as dataset creators by default
     team = {#"Rd": [" ", "1221893104692641", ""],

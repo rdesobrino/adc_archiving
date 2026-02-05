@@ -81,7 +81,7 @@
       <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
       <valueURI label="Cryology">https://purl.dataone.org/odo/ADCAD_00080</valueURI>
     </annotation>
-    <contact id="adc_adc">
+    <contact id="0779122657936203">
       <individualName>
         <givenName>Toolik Field Station</givenName>
         <surName>GIS Department</surName>
@@ -120,7 +120,7 @@
       </methodStep>
       <methodStep>
         <description>
-          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow described in in the Agisoft Metashape Users Manual (Agisoft LLC, 2022). The spatial resolution of the data products are: RGB orthomosaic: rgb_resm, DSM: dem_resm ms_px_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow described in the Agisoft Metashape Users Manual (Agisoft LLC, 2022). The spatial resolution of the data products are: RGB orthomosaic: rgb_resm, DSM: dem_resmms_px_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska) unless otherwise stated.</para>
         </description>
       </methodStep>
       <sampling>
@@ -148,7 +148,7 @@
       <entityName>dem_name</entityName>
       <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
       <attributeList>
-        <attribute id="adc_adc">  
+        <attribute id="dsm_id">  
           <attributeName>Elevation</attributeName>
           <attributeDefinition>Digital Surface Model; Elevation units are meters above mean sea level.</attributeDefinition>
           <measurementScale>
@@ -188,23 +188,8 @@
     <spatialRaster id="adc_adc">
       <entityName>rgb_name</entityName>
       <entityDescription>RGB Orthomosaic. Red (Band 1), Green (Band 2), Blue (Band 3).</entityDescription>
-      <physical>
-        <objectName>rgb_name</objectName>
-        <size unit="bytes"></size>
-        <authentication method="MD5">adc_adc</authentication>
-        <dataFormat>
-          <externallyDefinedFormat>
-            <formatName>image/geotiff</formatName>
-          </externallyDefinedFormat>
-        </dataFormat>
-        <distribution>
-          <online>
-            <url function="download">adc_adc</url>
-          </online>
-        </distribution>
-      </physical>
       <attributeList>
-	   <attribute id="adc_adc">
+	   <attribute id="red_id">
           <attributeName>Red</attributeName>
           <attributeDefinition>Red band</attributeDefinition>
           <measurementScale>
@@ -218,7 +203,7 @@
             </ratio>
           </measurementScale>
         </attribute>
-        <attribute id="adc_adc">
+        <attribute id="green_id">
           <attributeName>Green</attributeName>
           <attributeDefinition>Green band</attributeDefinition>
           <measurementScale>
@@ -232,7 +217,7 @@
             </ratio>
           </measurementScale>
         </attribute>
-       <attribute id="adc_adc">
+       <attribute id="blue_id">
           <attributeName>Blue</attributeName>
           <attributeDefinition>Blue band</attributeDefinition>
           <measurementScale>
