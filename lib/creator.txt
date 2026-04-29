@@ -1,0 +1,9 @@
+<creator id="cr_id">
+      <individualName>
+        <givenName>first</givenName>
+        <surName>last</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+	  <positionName>GIS Technician</positionName>
+      <userId directory="https://orcid.org">orc_id</userId>
+    </creator>

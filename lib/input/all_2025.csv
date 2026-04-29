@@ -1,0 +1,93 @@
+fname,fprod,pi_name,s_site,l_area,date,team,drone_v,rgb_v,ms_v,f_start,f_stop,f_alt,f_spd,f_flap,f_slap,wx,proc,klau,klau_base,flag
+An_NorthernShruburbia_250731,"""Z:\2025_Work\UAS_Processing\An_Ruby\An_NorthernShruburbia_250731\1_Products""",Ruby An,"Northern ""Shruburbia""",Sagwon,250731,Rd AC JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,12:25,12:58,35,1.5,80,80,sunny,AC,TRUE,Sagwon ,
+An_Sagwon_Shruburbia_250723,"""Z:\2025_Work\UAS_Processing\An_Ruby\An_Sagwon_Shruburbia_250723\1_Products""",Ruby An,"Northern ""Shruburbia""",Sagwon,250723,Rd AC JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:55,12:09,35,2,80,80,cloudy,AC,TRUE,Sagwon ,
+An_Toolik_Shruburbia_250710,"""Z:\2025_Work\UAS_Processing\An_Ruby\An_Toolik_Shruburbia_250710\1_Products""",Ruby An,"Toolik ""Shruburbia""",Toolik,250710,Rd AC RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:09,14:18,35,1.7,80,80,sunny,AC,TRUE,TLK2,
+An_ToolikShruburbia_250726,"""Z:\2025_Work\UAS_Processing\An_Ruby\An_ToolikShruburbia_250726\1_Products""",Ruby An,"Toolik ""Shruburbia""",Toolik,250726,AC Rd JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:45,14:15,35,1.7,80,80,briefly blue sky,Rd,TRUE,TLK2,
+BlumeWerry_IceCut_250718,"""Z:\2025_Work\UAS_Processing\BlumeWerry_Gesche\BlumeWerry_IceCut_250718\1_Products""",Gesche Blume-Werry,an experimental snow fence site,near Ice Cut,250718,AC Rd JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,15:10,16:37,40,2,80,80,sunny ,Rd,TRUE,Ice Cut,
+BlumeWerry_IceCut_250820,"""Z:\2025_Work\UAS_Processing\BlumeWerry_Gesche\BlumeWerry_IceCut_250820\1_Products""",Gesche Blume-Werry,an experimental snow fence site,near Ice Cut,250820,Rd RF JN MK,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:01,12:22,40,2,80,80,sunny,Rd,TRUE,Ice Cut,
+Culha_GTH89_250818,"""Z:\2025_Work\UAS_Processing\Culha_Cansu\Culha_GTH89_250818\1_Products""",Cansu Culha,Lake 395/GTH89 Thermokarst,South of Toolik Field Station,250818,Rd RF JN MK,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:36,12:34,60,3.5,80,80,partly cloudy,JN,,,poor Klau aligned to 250712
+Culha_GTH89_East_250712,"""Z:\2025_Work\UAS_Processing\Culha_Cansu\Culha_GTH89_East_250712\1_Products""",Cansu Culha,Lake 395/GTH89 East Thermokarst,South of Toolik Field Station,250712,RF Rd AC,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:26,14:41,40,2,80,80,partly cloudy,Rd,TRUE,Galbraith Rock,
+Culha_TGC3_50m_250619,"""Z:\2025_Work\UAS_Processing\Culha_Cansu\Culha_TGC3_50m_250619\1_Products""",Cansu Culha,TGC3,Galbraith Lake,250619,JN Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:31,11:32,50,2.5,80,80,sunny,Rd,TRUE,Galbraith Rock,
+Culha_TGC3_100m_250619,"""Z:\2025_Work\UAS_Processing\Culha_Cansu\Culha_TGC3_100m_250619\1_Products""",Cansu Culha,TGC3,Galbraith Lake,250619,JN Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:38,11:54,100,5.1,80,80,sunny,Rd,TRUE,Galbraith Rock,
+Culha_TGC3_250716,"""Z:\2025_Work\UAS_Processing\Culha_Cansu\Culha_TGC3_250716\1_Products""",Cansu Culha,TGC3,Galbraith Lake,250716,Rd AC JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,15:05,16:12,50,2.5,80,80,cloudy,JN,TRUE,Galbraith Rock,
+Culha_TGC3_250817,"""Z:\2025_Work\UAS_Processing\Culha_Cansu\Culha_TGC3_250817\1_Products""",Cansu Culha,TGC3,Galbraith Lake,250817,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:19,15:46,50,2.5,80,80,sunny,JN,TRUE,Galbraith Rock ,
+Deegan_ChrisCreek_250731,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_ChrisCreek_250731\1_Products""",Linda Deegan,Chris Creek,North Slope ,250731,JN AC Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:46,11:12,100,5.1,80,80,sunny,Rd,TRUE,Happy Valley ,
+Deegan_ClaraCreek_250802,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_ClaraCreek_250802\1_Products""",Linda Deegan,Clara Creek,Coldfoot Area,250802,Rd JN AC RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:26,11:13,100,5.1,80,80,sunny,Rd,TRUE,AB33,
+Deegan_DanCreek_250719,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_DanCreek_250719\1_Products""",Linda Deegan,Dan Creek,North Slope ,250719,Rd JN AC ,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:08,13:25,100,5.1,80,80,sunny,Rd,TRUE,Ice Cut,
+Deegan_DouglasCreek_250704,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_DouglasCreek_250704\1_Products""",Linda Deegan,Douglas Creek,Coldfoot Area,250704,RF JN AC,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:29,11:40,110,5,80,80,sunny,Rd,TRUE,AB33,25cm klau and 9m below pgc
+Deegan_DouglasCreek_250802,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_DouglasCreek_250802\1_Products""",Linda Deegan,Douglas Creek,Coldfoot Area,250802,Rd AC RF JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,12:40,13:19,100,5.1,80,80,sunny,Rd,TRUE,AB33,25cm klau and 10m below pgc aaand 50cm horizontal from 250704
+Deegan_Galbraith_250801,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_Galbraith_250801\1_Products""",Linda Deegan,Galbraith Creek,,250801,AC Rd JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:50,11:15,100,5.1,80,80,sunny,Rd,TRUE,Galbraith Rock ,
+Deegan_GraylingCreek_250704,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_GraylingCreek_250704\1_Products""",Linda Deegan,Grayling Creek,Coldfoot Area,250704,RF JN AC,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,12:57,13:10,110,5,80,80,sunny,Rd,TRUE,AB33,
+Deegan_HappyValley_250719,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_HappyValley_250719\1_Products""",Linda Deegan,Happy Valley,North Slope,250719,AC Rd JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,15:49,16:16,100,5.1,80,80,sunny,JN,TRUE,Happy Valley ,1.4m off from PGC
+Deegan_Hershey_250801,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_Hershey_250801\1_Products""",Linda Deegan,Hershey Creek,Toolik Lake Area ,250801,AC JN Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:51,14:18,100,5.1,80,80,sunny,Rd,TRUE,TLK2,
+Deegan_MilkeCreek_250731,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_MilkeCreek_250731\1_Products""",Linda Deegan,Milke Creek ,North Slope,250731,AC Rd JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:15,14:37,100,5.1,80,80,sunny,Rd,TRUE,Happy Valley ,
+Deegan_RudyCreek_250731,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_RudyCreek_250731\1_Products""",Linda Deegan,Rudy Creek,North Slope,250731,AC JN Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,16:15,16:50,100,5.1,80,80,sunny,Rd,TRUE,AB45,
+Deegan_Sagwon_250723,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_Sagwon_250723\1_Products""",Linda Deegan,Sagwon Creek,North Slope,250723,AC JN Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,12:59,13:29,100,5.1,80,80,cloudy,Rd,TRUE,Sagwon,
+Deegan_ToolikRiver_250718,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_ToolikRiver_250718\1_Products""",Linda Deegan,Toolik River,North Slope,250718,AC JN Rd,DJI Matrice 210 v3,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,0.459027778,0.472916667,100,5.1,80,80,cloudy,Rd,TRUE,Imnavait,
+Deegan_UpperOks_250801,"""Z:\2025_Work\UAS_Processing\Deegan_Linda\Deegan_UpperOks_250801\1_Products""",Linda Deegan,Upper Oks,North Slope,250801,AC JN Rd,DJI Matrice 210 v3,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,0.629166667,0.646527778,100,5.1,80,80,sunny,Rd,,,aligned to 250718
+Fetcher_ToolikBurn_250905,"""Z:\2025_Work\UAS_Processing\Fetcher_Ned\Fetcher_ToolikBurn_250905\1_Products""",Ned Fetcher,2015 Experimental Burn,Toolik Lake Area ,250905,RF Rd ,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,,15:37,16:22,50,2.5,80,80,cloudy,Rd,TRUE,TLK2,two flights identical except before and after the 4pm mark and 90cm off in the vert
+Guglielimin_Large_110_x7_Mica_250903,"""Z:\2025_Work\UAS_Processing\Guglielmin_Mauro\Guglielimin_Large_110_x7_Mica_250903\1_Products""",Mauro Guglielmin,Insubria study site,Toolik Lake Area ,250903,Rd RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,15:02,16:15,110,5.6,80,80,partly cloudy,Rd,TRUE,TLK2,bad klau in F1 and stairstep artifcat in northwest corner where flights aligned
+Guglielmin_Insubria_50m_250711,"""Z:\2025_Work\UAS_Processing\Guglielmin_Mauro\Guglielmin_Insubria_50m_250711\1_Products""",Mauro Guglielmin,Insubria study site,Toolik Lake Area ,250711,AC Rd RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:00,11:00,50,2.5,80,80,sunny,Rd,TRUE,TLK2,
+Guglielmin_Toolik_South_x7_Micasense__250620,"""Z:\2025_Work\UAS_Processing\Guglielmin_Mauro\Guglielmin_Toolik_South_x7_Micasense__250620\1_Products""",Mauro Guglielmin,Insubria study site,Toolik Lake Area ,250620,Rd JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:46,12:26,110,5.6,80,80,partly cloudy,JN,TRUE,TLK2,
+Gugliemin_Toolik_Micasense_50m_250630,"""Z:\2025_Work\UAS_Processing\Guglielmin_Mauro\Gugliemin_Toolik_Micasense_50m_250630\1_Products""",Mauro Guglielmin,Insubria study site,Toolik Lake Area ,250630,RF JN,DJI Matrice 210 v2,,Micasense RedEdge-MX,16:25,17:17,50,2.5,80,80,partly cloudy,Rd,,,no kalur or rgb for this flight and would not point aligned so markeraligned to 250711 ultimately think it was ok but uneven lighting in ortho
+Gugliemin_Toolik_x7_110m_250701,"""Z:\2025_Work\UAS_Processing\Guglielmin_Mauro\Gugliemin_Toolik_x7_110m_250701\1_Products""",Mauro Guglielmin,Insubria study site,Toolik Lake Area ,250701,RF JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,,11:23,12:11,110,5.6,80,80,sunny,Rd,TRUE,TLK2,
+Iwahana_HappyValley_250719,"""Z:\2025_Work\UAS_Processing\Iwahana_Go\Iwahana_HappyValley_250719\1_Products""",Go Iwahana,Happy Valley,North Slope,250719,Rd AC JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:23,15:13,60,3,80,80,sunny,AC Rd,TRUE,Happy Valley,
+Iwahana_HappyValley_250906,"""Z:\2025_Work\UAS_Processing\Iwahana_Go\Iwahana_HappyValley_250906\1_Products""",Go Iwahana,Happy Valley,North Slope,250906,Rd RF SS,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,15:50,16:31,60,3,80,80,sunny,Rd,TRUE,Happy Valley, 
+Iwahana_IceCut_250719,"""Z:\2025_Work\UAS_Processing\Iwahana_Go\Iwahana_IceCut_250719\1_Products""",Go Iwahana,Ice Cut,North Slope,250719,AC JN Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:53,12:13,60,3,80,80,sunny,JN ,TRUE,Ice Cut,
+Iwahana_IceCut_250906,"""Z:\2025_Work\UAS_Processing\Iwahana_Go\Iwahana_IceCut_250906\1_Products""",Go Iwahana,Ice Cut,North Slope,250906,Rd RF SS,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:00,14:34,60,3,80,80,sunny,Rd,TRUE,Ice Cut,
+Iwahana_Sagwon_250723,"""Z:\2025_Work\UAS_Processing\Iwahana_Go\Iwahana_Sagwon_250723\1_Products""",Go Iwahana,Sagwon,North Slope,250723,Rd AC JN ,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:58,15:02,60,3,80,80,cloudy,AC Rd,TRUE,Sagwon,
+Oberbauer_Imnavait_250716,"""Z:\2025_Work\UAS_Processing\Oberbauer_Steve\Oberbauer_Imnavait_250716\1_Products""",Steve Oberbauer,Imnavait,Toolik Lake Area ,250716,Rd AC RF JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:50,12:31,70,3.5,80,80,partly cloudy,JN,TRUE,Imnavait ,
+Oberbauer_Toolik_MAT_Hill_250711,"""Z:\2025_Work\UAS_Processing\Oberbauer_Steve\Oberbauer_Toolik_MAT_Hill_250711\1_Products""",Steve Oberbauer,Moist Acidic Tundra snowfences,Toolik Lake Area ,250711,Rd RF AC,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:20,15:06,70,3.5,80,80,sunny,AC Rd,TRUE,TLK2,
+Rocha_Unburn_250726,"""Z:\2025_Work\UAS_Processing\Rocha_Adrian\Unburn\1_Products""",Adrian Rocha,LTREB Unburned Plots,Anaktuvuk Burn,250726,AC Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:50,,35,1.7,80,80,,JN,,,Point-based align to 2023 x7
+Rocha_SevereBurn_250726,"""Z:\2025_Work\UAS_Processing\Rocha_Adrian\Rocha_SevereBurn_250726\1_Products""",Adrian Rocha,LTREB Severe Burn Plots,Anaktuvuk Burn,250726,AC Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:30,11:23,35,1.7,80,80,mostly sunny ,JN Rd,,,marker aligned with lots of issues to 2023 data
+Zona_GTH89_250712,Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_GTH89_FULL_250712\1_Products,Donatella Zona,Lake 395/GTH89 Thermokarst,South of Toolik Field Station,250712,RF AC Rd,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:45,15:50,50,2.5,80,80,cloudy,Rd,TRUE,Galbraith Rock,
+Zona_T3_Large_250805,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T3_Large_250805\1_Products""",Donatella Zona,Thermokarst Site T3,North Slope,250805,AC JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:53,15:09,70,3.3,80,80,partly cloudy,JN,,,flight was flown with GCPs surveyed in PPK style. Micasense aligned to x7\
+Zona_T3_Small_250805,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T3_Small_250805\1_Products""",Donatella Zona,Thermokarst Site T3,North Slope,250805,AC JN,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:26,14:45,35,1.5,80,80,partly cloudy,JN,,,uses three GCPs
+Zona_T4_Large_250807,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T4_Large_250807\1_Products""",Donatella Zona,Thermokarst Site T4,North Slope,250807,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,14:40,15:15,70,3.5,80,80,sunny,JN,,,uses GCPs
+Zona_T4_Small_250807,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T4_Small_250807\1_Products""",Donatella Zona,Thermokarst Site T4,North Slope,250807,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,15:18,15:30,35,1,80,80,sunny,JN,,,aligned to T4 large
+Zona_T6_250807,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T6_250807\1_Products""",Donatella Zona,Thermokarst Site T6,North Slope,250807,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,16:38,16:41,35,1,80,80,sunny,MK Rd,,,uses GCPs but nto well distributed through flight and pretty poor horizontal and vertical alignment
+Zona_T10_Large_250813,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T10_Large_250813\1_Products""",Donatella Zona,Thermokarst Site T10,North Slope,250813,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:11,11:28,100,5.1,80,80,partly cloudy,MK,,,GCPs 10-20cm off in final product
+ Zona_T10_Small_250813,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T10_Small_250813\1_Products""",Donatella Zona,Thermokarst Site T10,North Slope,250813,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,11:35,11:41,35,1.7,80,80,partly cloudy,MK,,,GCPs 10-20cm off in final product
+Zona_T12_Small_250813,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T12_Small_250813\1_Products""",Donatella Zona,Thermokarst Site T12,North Slope,250813,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,13:09,13:20,35,1.7,80,80,cloudy,JN,,,three GCPs
+Zona_T12_Large_250813,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T12_Large_250813\1_Products""",Donatella Zona,Thermokarst Site T12,North Slope,250813,JN RF,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,12:51,13:04,50,2.5,80,80,cloudy,JN ,,,7 GCPs
+Zona_T15_250817,"""Z:\2025_Work\UAS_Processing\Zona_Donatella\Zona_T15_250817\1_Products""",Donatella Zona,Thermokarst Site T15,North Slope,250817,Rd MK,DJI Matrice 210 v2,DJI Zenmuse x7 24mm RGB sensor,Micasense RedEdge-MX,10:44,11:18,45,1.6,80,80,cloudy,Rd,,,poor laignemnt of markers surveyed using handhelf gps
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,Flights,Processing ,,,,,,,,,,,,,
+,,,,,Rd,36,31,,,,,,,,,Rd,31,,,
+,,,,,JN,38,15,,,,,,,,,JN,15,,,
+,,,,,RF,26,0,,,,,,,,,RF,0,,,
+,,,,,AC,30,6,,,,,,,,,AC,6,,,

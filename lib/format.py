@@ -31,7 +31,10 @@ def make_creators(initials): ## Rd and RF included as dataset creators by defaul
             "OCG": ["Olivia Cronin-Golomb", "7272403399156581", "https://orcid.org/0000-0003-2842-158X"],
             "MS": ["Mary Stack", "1380340284973222", ""],
             "LW": ["Lyndee Weaver", "8872743468265462", ""],
-            "RM": ["Rowan McPherson", "3323562272538209", ""]}
+            "RM": ["Rowan McPherson", "3323562272538209", ""],
+            "SS": ["Soumitra Sakhalkar", "3128214525321854", "0000-0002-1375-3883"],
+            "HD": ["Haley Dunleavy", "9799509437574473", "0000-0002-7383-8598"]
+    }
     if initials in team:
         with open(os.path.join(cwd, "creator.txt"), "r") as creator:
             text = creator.read()

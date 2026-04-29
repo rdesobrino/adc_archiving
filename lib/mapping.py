@@ -48,8 +48,9 @@ def mapper(keys, data_fields, projects):
         center = [float(x) for x in data_fields["tifs"][tif]["center"].split(",")]
         bases = {"TLK2": ["the TLK2 CORS station", [394474.177, 7615113.754]], "Galbraith Rock": ["a mobile base station established on a rock", [399245.867,7601064.231]],
                  "AB45": ["the AB45 CORS station", [424362.468, 7628807.999]], "AB33": ["the AB33 CORS station", [621978.3273, 7462139.122]],
-                 "Ice Cut": ["a mobile base station established on a rock", [426768.062,7660653.426]],
-                 "Sagwon": ["a mobile base station established on a rock", [433486.0535, 7702537.337]], "Happy Valley": ["a mobile base station established on a rock", [427019.806,7672785.259]]}
+                 "Ice Cut": ["a mobile base station established on a rock", [426768.062,7660653.426]], "TRTK Rock": ["a mobile base station established on a rock", [413710.988, 7621097.657]],
+                 "Sagwon": ["a mobile base station established on a rock", [433486.0535, 7702537.337]], "Happy Valley": ["a mobile base station established on a rock", [427019.806,7672785.259]],
+                 "Imnavait":["a mobile base station established in bedrock", [405540.121,7613587.016]], "EDOC":["the EDOC CORS station", [450425.545, 7801011.498]]}
         if "UTM" in keys["h_crs"]:
             dist = round((math.dist(center, bases[data_fields["klau_base"]][1])) / 1000, 2)
             keys["klau_meth"] = ("Camera coordinates were recorded at the time of image capture using an external PPK antenna (KlauPPK) for each image captured and "
@@ -83,6 +84,8 @@ def mapper(keys, data_fields, projects):
                 keys[key] = project[key]
             if project[key] == "NSF":
                 keys["project_info"]=format.make_nsf_project(project)
+            if key == "project_name" and project[key]:
+                keys["pi_name"] = data_fields["pi_name"] + " and the '" + project[key] + "' project"
 
     if data_fields["flag"] != "":
         print("***Dataset has the following flag ***", data_fields["flag"], "***")

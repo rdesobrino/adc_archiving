@@ -16,7 +16,7 @@ if  __name__ == "__main__":
     args = parser.parse_args()
 
     csv = args.i
-    fields_dic = {} ## populate dictionary with input fields from user
+    fields_dic = {} ## populate a dictionary with input fields for each dataset from csv
     with open(csv, "r") as f:
         fields_list = f.readline().strip().split(',')
         for dataset in f.readlines():
@@ -27,7 +27,7 @@ if  __name__ == "__main__":
                     fields_dic[fields[0]][fields_list[i]] = fields[i].strip()
 
     projects = r"C:\Users\rcdesobrino\Desktop\repos\ADC_archiving\adc_archiving\lib\projects.txt"
-    projects_dic = {} # populate dictionary with standard list of projects
+    projects_dic = {} # populate a dictionary with project information
     with open(projects, "r") as f:
         fields_list = f.readline().strip().split('\t')
         for dataset in f.readlines():
@@ -38,7 +38,7 @@ if  __name__ == "__main__":
                 for i in range(len(fields)):
                     projects_dic[fields[0]][fields_list[i]] = fields[i].replace('"', "").strip()
 
-    for dataset in fields_dic: ## populate dictionary with dataset-specific (raster) metadata
+    for dataset in fields_dic: ## populate a dictionary with metadata for each raster dataset
         fields_dic[dataset]["tifs"] = {}
         fprod = fields_dic[dataset]["fprod"].replace('"','')
         for file in os.listdir(fprod):
@@ -46,7 +46,7 @@ if  __name__ == "__main__":
             if file.upper().endswith('.TIF'):
                 fields_dic[dataset]["tifs"][file] = gdalinfo.get_gdal(file)  ## creates raster metadata file from gdal
 
-        with open(os.path.join(cwd, r"lib\ADC_template.xml"), "r") as template:
+        with open(os.path.join(cwd, r"lib\adc_template.xml"), "r") as template:
             template = template.read()
         with open(os.path.join(cwd, r"lib\ms_spatialRaster.txt"), "r") as ms_template:
             ms_template = ms_template.read()
