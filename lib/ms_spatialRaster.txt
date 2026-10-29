@@ -98,7 +98,7 @@
       </verticalAccuracy>
       <cellSizeXDirection>ms_res</cellSizeXDirection>
       <cellSizeYDirection>ms_res</cellSizeYDirection>
-      <numberOfBands>3</numberOfBands>
+      <numberOfBands>6</numberOfBands>
       <rasterOrigin>Upper Left</rasterOrigin>
       <rows>ms_rows</rows>
       <columns>ms_cols</columns>

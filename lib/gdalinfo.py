@@ -26,12 +26,12 @@ def centroid(info):
     return center
 
 def get_hcs(info):
-    hcs = info[info.find("PROJCRS[") + len("PROJCRS["):].split('"')[1] ##TODO change user-read format?
+    hcs = info[info.find("PROJCRS[") + len("PROJCRS["):].split('"')[1]
     if hcs == "NAD83(2011) / UTM zone 6N":
         return "NAD_1983_UTM_Zone_6N"
     elif hcs == "NAD83(2011) / UTM zone 5N":
         return "NAD_1983_UTM_Zone_5N"
-    print("Change HCS to comply with https://eml.ecoinformatics.org/schema/eml-spatialreference_xsd#SpatialReferenceType_horizCoordSysName")
+    print("This file is in ", hcs, " and might mess up the distance calculations.")
     return hcs
 
 def get_res(info):
@@ -60,7 +60,7 @@ def get_gdal(tif_path):  ##
     data = {}
     data["hcs"] = get_hcs(info)
     data["res"] = get_res(info)
-    data["bands"] = get_bands(info)  ## TODO: returning 3 for multispec
+    data["bands"] = get_bands(info)
     data["rows"] = get_rows(info)
     data["cols"] = get_cols(info)
     data["bobo"] = bobo(info)

@@ -1,0 +1,41 @@
+<spatialRaster id="adc_adc">
+      <entityName>dem_name</entityName>
+      <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
+      <attributeList>
+        <attribute id="dsm_id">  
+          <attributeName>Elevation</attributeName>
+          <attributeDefinition>Digital Surface Model; Elevation units are meters above mean sea level.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="elevation">http://purl.dataone.org/odo/ECSO_00001567</valueURI>
+          </annotation>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>h_crs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>dem_res</cellSizeXDirection>
+      <cellSizeYDirection>dem_res</cellSizeYDirection>
+      <numberOfBands>1</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>18109</rows>
+      <columns>17740</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+</spatialRaster>

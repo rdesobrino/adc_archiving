@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:ffa9eec8-8737-4c33-9bdc-84672638169c" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
+  <dataset id="adc_adc">
+    <title>Orthomosaicortho_s and Digital Surface Model of s_sitel_area, Alaska on date_desc</title>
+    <creator id="1221893104692641">
+      <individualName>
+        <givenName>Rachel</givenName>
+        <surName>de Sobrino</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+	  <positionName>GIS and Remote Sensing Analyst</positionName>
+      <address>
+        <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
+        <city>FAIRBANKS</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99775</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>rcdesobrino@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">http://orcid.org/0009-0001-0642-3296</userId>
+    </creator>
+    <pubDate>2026</pubDate>
+    <abstract>
+      <para>This dataset includes a rgb_descDigital Surface Model (DSM)ms_desc of s_sitel_area, Alaska. Imagery was collected by the Toolik Field Station GIS Department using a drone_v tricopter with a rgb_vrgb_and_ortho ms_v. gps_descThis data was collected in support of research by pi_name on kword_desc.</para>
+    </abstract>
+    <keywordSet>
+      <keyword>Drone</keyword>
+      <keyword>UAV</keyword>
+      <keyword>Alaska</keyword>
+      <keyword>Arctic</keyword>
+      <keyword>kword_1</keyword>
+	  <keyword>kword_2</keyword>
+	  <keyword>kword_3</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This work is dedicated to the public domain under the Creative Commons Universal 1.0 Public Domain Dedication. To view a copy of this dedication, visit https://creativecommons.org/publicdomain/zero/1.0/.</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>s_sitel_area, Alaska</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>webo</westBoundingCoordinate>
+          <eastBoundingCoordinate>ebo</eastBoundingCoordinate>
+          <northBoundingCoordinate>nobo</northBoundingCoordinate>
+          <southBoundingCoordinate>sobo</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>hyph_date</calendarDate>
+			<time>f_start</time>
+          </beginDate>
+          <endDate>
+            <calendarDate>hyph_date</calendarDate>
+			<time>f_stop</time>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <annotation>
+      <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
+      <valueURI label="Geoscience">https://purl.dataone.org/odo/ADCAD_00038</valueURI>
+    </annotation>
+    <annotation>
+      <propertyURI label="Data Sensitivity Category">http://purl.dataone.org/odo/SENSO_00000005</propertyURI>
+      <valueURI label="Non-sensitive data">http://purl.dataone.org/odo/SENSO_00000002</valueURI>
+    </annotation>
+    <annotation>
+      <propertyURI label="theme">http://www.w3.org/ns/dcat#theme</propertyURI>
+      <valueURI label="Cryology">https://purl.dataone.org/odo/ADCAD_00080</valueURI>
+    </annotation>
+    <contact id="0779122657936203">
+      <individualName>
+        <givenName>Toolik Field Station</givenName>
+        <surName>GIS Department</surName>
+      </individualName>
+      <organizationName>Toolik Field Station, University of Alaska Fairbanks</organizationName>
+      <address>
+        <deliveryPoint>P.O. Box 757005, 2120 N Koyukuk Dr #138</deliveryPoint>
+        <city>FAIRBANKS</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99775</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>uaf-iab-tfs-gis@alaska.edu</electronicMailAddress>
+      <userId directory="https://orcid.org"></userId>
+    </contact>
+    <publisher id="8315836021741415">
+      <organizationName>NSF Arctic Data Center</organizationName>
+      <electronicMailAddress>support@arcticdata.io</electronicMailAddress>
+      <onlineUrl>http://arcticdata.io</onlineUrl>
+      <userId directory="unknown">Q77285095</userId>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Ethical Research Practices</title>
+            <para>Drone pilots maintain an active Part 107 certification and followed all local airspace regulations. Work was conducted on land managed by either the Bureau of Land Management or Alaska Department of Natural Resources with the appropriate permitting and authorization. All equipment was removed from the field and efforts were made to limit the impacts of human travel across the tundra landscape. Work was not conducted over wildlife, human settlements, or people, except where affiliated with the flight team.</para>
+          </section>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>UAV flight(s) were conducted with a drone_v. gps_methrgb_meth ms_meth f_wx </para>
+          <para>Contact uaf-iab-tfs-gis@alaska.edu for more information on methodology and data accuracy.</para>
+		</description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow described in the Agisoft Metashape Users Manual (Agisoft LLC, 2022). The spatial resolution of the data products are: rgb_resDSM: dem_resmms_px_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska).</para>
+        </description>
+      </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>UAV flight of s_sitel_area, Alaska at field site selected by PI pi_name. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Surface Model of s_sitel_area, Alaska" or contact Toolik Field Station GIS for availability.</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para></para>
+        </samplingDescription>
+      </sampling>
+    </methods>
+    <project>
+      <title>Toolik Field Station Base Funding</title>
+      <award>
+        <funderName>National Science Foundation</funderName>
+        <funderIdentifier>https://doi.org/10.13039/100000001</funderIdentifier>
+        <awardNumber>2221133</awardNumber>
+        <title>Toolik Field Station Base Funding</title>
+        <awardUrl>https://www.nsf.gov/awardsearch/showAward?AWD_ID=2221133</awardUrl>
+	  </award>
+      <personnel>
+        <individualName>
+          <givenName>Brian M</givenName>
+          <surName>Barnes</surName>
+        </individualName>
+        <role>coPrincipalInvestigator</role>
+      </personnel>
+	  <personnel>
+        <individualName>
+          <givenName>Marin C</givenName>
+          <surName>Kuizenga</surName>
+        </individualName>
+        <role>coPrincipalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Amanda B</givenName>
+          <surName>Young</surName>
+        </individualName>
+        <role>coPrincipalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Marion S</givenName>
+          <surName>Bret-Harte</surName>
+        </individualName>
+        <role>principalInvestigator</role>
+      </personnel>
+	  </project>
+      </dataset>
+</eml:eml>

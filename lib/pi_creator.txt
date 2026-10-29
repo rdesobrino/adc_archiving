@@ -1,0 +1,10 @@
+<creator id="cr_id">
+      <individualName>
+        <givenName>first</givenName>
+        <surName>last</surName>
+      </individualName>
+      <organizationName>org_name</organizationName>
+      <positionName>role</positionName>
+      <electronicMailAddress>email</electronicMailAddress>
+      <userId directory="https://orcid.org">orc_id</userId>
+    </creator>

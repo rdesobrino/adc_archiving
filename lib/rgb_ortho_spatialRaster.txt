@@ -1,0 +1,65 @@
+<spatialRaster id="adc_adc">
+      <entityName>rgb_name</entityName>
+      <entityDescription>RGB Orthomosaic. Red (Band 1), Green (Band 2), Blue (Band 3).</entityDescription>
+      <attributeList>
+	   <attribute id="red_id">
+          <attributeName>Red</attributeName>
+          <attributeDefinition>Red band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute id="green_id">
+          <attributeName>Green</attributeName>
+          <attributeDefinition>Green band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+       <attribute id="blue_id">
+          <attributeName>Blue</attributeName>
+          <attributeDefinition>Blue band</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <spatialReference>
+        <horizCoordSysName>h_crs</horizCoordSysName>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>unknown</accuracyReport>
+      </verticalAccuracy>
+      <cellSizeXDirection>rgb_res</cellSizeXDirection>
+      <cellSizeYDirection>rgb_res</cellSizeYDirection>
+      <numberOfBands>3</numberOfBands>
+      <rasterOrigin>Upper Left</rasterOrigin>
+      <rows>rgb_rows</rows>
+      <columns>rgb_cols</columns>
+      <verticals>1</verticals>
+      <cellGeometry>pixel</cellGeometry>
+    </spatialRaster>

@@ -1,6 +1,8 @@
 
 import os
 import random
+import math
+from lib import creator_ids
 cwd = os.getcwd()
 
 def date_descr(date):
@@ -16,42 +18,104 @@ def hyphenate_date(date):
     DD = date[4:6]
     return "20" + YY + "-" + MM + "-" + DD
 
-def attr_id():
+def attr_id(): ## random ID
     id = ""
     for i in range(30):
         id += str(random.randint(0, 9))
     return id
 
-def make_creators(initials): ## Rd and RF included as dataset creators by default
-    team = {#"Rd": [" ", "1221893104692641", ""],
-            #"RF": [" ", "4874726551979884", ""],
-            "JN": ["Jorge Noguera", "7438520647130753", ""],
-            "AC": ["Adam Chavez", "1818551077413436", "https://orcid.org/0009-0001-0308-8461"],
-            "MK": ["Matteo Kuizenga", "4947775109728476", ""],
-            "OCG": ["Olivia Cronin-Golomb", "7272403399156581", "https://orcid.org/0000-0003-2842-158X"],
-            "MS": ["Mary Stack", "1380340284973222", ""],
-            "LW": ["Lyndee Weaver", "8872743468265462", ""],
-            "RM": ["Rowan McPherson", "3323562272538209", ""],
-            "SS": ["Soumitra Sakhalkar", "3128214525321854", "0000-0002-1375-3883"],
-            "HD": ["Haley Dunleavy", "9799509437574473", "0000-0002-7383-8598"]
-    }
+def make_tfs_creators(initials): ## Rd and RF included as dataset creators by default (but RF not in 2026 template)
+    team = {"RF": ["Randy Fulweber", "2350913618209244", "https://orcid.org/0000-0003-0537-4194", "GIS and Remote Sensing Manager"],
+            "JN": ["Jorge Noguera", "7438520647130753", "", "GIS and Remote Sensing Technician"],
+            "AC": ["Adam Chavez", "1818551077413436", "https://orcid.org/0009-0001-0308-8461", "GIS and Remote Sensing Technician"],
+            "MK": ["Matteo Kuizenga", "4947775109728476", "", ""],
+            "OCG": ["Olivia Cronin-Golomb", "7272403399156581", "https://orcid.org/0000-0003-2842-158X", "GIS and Remote Sensing Technician"],
+            "MS": ["Mary Stack", "1380340284973222", "", "GIS and Remote Sensing Technician"],
+            "LW": ["Lyndee Weaver", "8872743468265462", "", "GIS and Remote Sensing Technician"],
+            "RM": ["Rowan McPherson", "3323562272538209", "", "GIS and Remote Sensing Analyst"],
+            "SS": ["Soumitra Sakhalkar", "3128214525321854", "https://orcid.org/0000-0002-1375-3883", ""],
+            "HD": ["Haley Dunleavy", "9799509437574473", "https://orcid.org/0000-0002-7383-8598", ""],
+            "QW": ["Quentin Walker", "0714959883143746", "", "GIS and Remote Sensing Manager"],
+            "SP": ["Sophia Parker", "4052078996786969", "https://orcid.org/0009-0004-7219-6628", "GIS and Remote Sensing Technician"],
+            "AH": ["Abigail Haas", "9092033674650736", "", "GIS and Remote Sensing Technician"],
+            }
+
     if initials in team:
-        with open(os.path.join(cwd, "creator.txt"), "r") as creator:
+        with open(os.path.join(cwd, "team.txt"), "r") as creator:
             text = creator.read()
             text = text.replace("cr_id", team[initials][1] )
             text = text.replace("first", team[initials][0].split(" ")[0])
             text = text.replace("last", team[initials][0].split(" ")[1])
-            text = text.replace("orc_id", team[initials][2])  ## TODO potentially delete orcID if empty
+            text = text.replace("orc_id", team[initials][2])
+            text = text.replace("role", team[initials][3])
         return text   ## return completed creator text
+
     elif initials not in ["RF", "Rd"]:
         print("Who is " + initials + "?")
     return " "
+
+def make_pi_creators(pi_dic):
+    with open(os.path.join(cwd, "pi_creator.txt"), "r") as creator:
+        text = creator.read()
+        text = text.replace("cr_id", creator_ids.make_random_id())
+        text = text.replace("first", pi_dic["First"].strip())
+        text = text.replace("last", pi_dic["Last"].strip())
+        text = text.replace("org_name", pi_dic["Institution"].strip())
+        text = text.replace("role", pi_dic["Role"].strip())
+        text = text.replace("email", pi_dic["Email"].strip())
+        text = text.replace("orc_id", pi_dic["OrcID"].strip())
+    return text  ## return completed creator text
 
 def make_nsf_project(project):
     with open(os.path.join(cwd, "nsf_project.txt"), "r") as nsf_proj:
         text = nsf_proj.read()
         for key in project:
             text = text.replace(key, project[key])
-        text = text.replace("gname", project["PI"].split(" ")[0]) ## I am lazy
-        text = text.replace("sname", project["PI"].split(" ")[1]) ## apologies fellow Spanish-last-name-havers
+        text = text.replace("gname", project["First"]) ## I am lazy
+        text = text.replace("sname", project["Last"]) ## apologies fellow Spanish-last-name-havers
     return text
+
+def gps_methodology(tif, method, ref):
+    bases = {"TLK2": ["the TLK2 CORS station", [394474.177, 7615113.754]],
+             "Galbraith Rock": ["a mobile base station established on a rock", [399245.867, 7601064.231]],
+             "AB45": ["the AB45 CORS station", [424362.468, 7628807.999]],
+             "AB33": ["the AB33 CORS station", [621978.3273, 7462139.122]],
+             "Ice Cut": ["a mobile base station established on a rock", [426768.062, 7660653.426]],
+             "TRTK Rock": ["a mobile base station established on a rock", [413710.988, 7621097.657]],
+             "Sagwon": ["a mobile base station established on a rock", [433486.0535, 7702537.337]],
+             "Happy Valley": ["a mobile base station established on a rod and PVC driven into the tundra",
+                              [427019.806, 7672785.259]],
+             "Imnavait": ["a mobile base station established in bedrock", [405540.121, 7613587.016]],
+             "EDOC": ["the EDOC CORS station", [450425.545, 7801011.498]]}
+
+    dist = 0
+
+    if ref in bases:  ### TODO turn into function
+        center = [float(x) for x in tif["center"].split(",")]
+        dist = round((math.dist(center, bases[ref][1])) / 1000, 2)
+        if dist > 20:
+            print("The reported distance between the flight and corresponding base is more than 20km")
+
+    gps_desc = {"GCPs" : "Ground Control Points were deployed throughout the survey area to georeference the dataset. ",
+                "Emlid Reach M2" : "Image coordinates were collected using Emlid Reach M2 kit and post-processed in Emlid Studio 1.1 software. ",
+                "KlauPPK" : "Image coordinates were collected using KlauPPK kit and post-processed in KlauPPK Version 7.22.1 (Klau Geomatics). ",
+                "align" : ""}
+
+    if method == "GCPs" and dist > 0:
+        gps_meth = "A real-time-kinematic (RTK) survey of Ground Control Points with baseline " + str(dist) + " kilometers from " + bases[ref][0] + " was conducted to georeference the point cloud. "
+    elif method == "GCPs":
+        gps_meth = "A Post-Processing Kinematic (PPK) survey of Ground Control Points distributed throughout the survey area was conducted to georeference the point cloud. "
+    elif method == "align":
+        gps_meth = "Point clouds were aligned to a flight of the same study site surveyed on " + ref + " due to a lack of available positioning data. "
+    else:
+        ppk = {
+            "Emlid Reach M2": "Camera coordinates were recorded for each image at the time of capture using an Emlid Reach M2 external PPK antenna and "
+                              "post-processed using " + bases[ref][0] + " " + str(
+                dist) + " kilometers away with Emlid Studio 1.10. ",
+            "KlauPPK": "Camera coordinates were recorded for each image at the time of capture using a KlauPPK external PPK antenna and "
+                       "post-processed using " + bases[ref][0] + " " + str(
+                dist) + " kilometers away with KlauPPK Version 7.22.1 (Klau Geomatics). "
+        }
+        gps_meth = ppk[method]
+
+    return gps_desc[method], gps_meth
