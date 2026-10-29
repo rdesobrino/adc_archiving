@@ -10,16 +10,17 @@ run metadata.py from the command line with an input csv containing the correctly
 ```commandline
 python metadata.py -i input_fields.csv
 ```
-.xml files will be output to eml folder. 
+.xml files will be output to /eml folder. 
 
 ## /lib
 templates, input files, and helper scripts are found here. 
 
-#### adc_template.xml
+#### adc_template_2026.xml
 this is a reference xml that contains the bones of all metadata for UAV flights by Toolik Field Station. It uses unique key identifiers to serve as place holders for unique metadata that is filled in by simple find and replace functions. 
 
 #### adc_eml_keys.csv 
 column one is used to generate the keys used in a dictionary representing each data folder. the other columsn provide descriptions and examples of the fields and how to format the responses grammatically. 
+**new keys in template need to be added to this csv. 
 
 #### /inputs
 home for reference csvs of required information. I have the columns organized with where I find the information: file explorer structure, metadata form, and readme file 
@@ -40,7 +41,7 @@ gdalinfo.py is called on an individual raster and generates raster-specific geog
 #### creator_ids.py
 creator_ids.py is a helper function not called in any of the other scripts. Use this to generate unique ADC-compliant IDs for "creators"
 
-#### creator.txt, ms_spatialRaster.txt, ms_2019_spatialRaster.txt, nsf_project.txt, project.txt
+#### creator.txt, ms_p_spatialRaster.txt, ms_spatialRaster.txt, ms_2019_spatialRaster.txt, nsf_project.txt, project.txt, people_projects.txt, etc. 
 are all template text files used to insert longer or more complicated information that shouldn't be present in each file. There is certainly a better way to do this, including because editin a tab-delimted txt is annoying, which is what is required of project.txt
 
 ### /emls
@@ -48,7 +49,5 @@ Output emls will be created in an /emls directory, but can easily be created in 
 
 
 #### Limitations
-* most hard-coded values are found in lib/adc_template or the various txt files, which makes it annoying to track down edits. 
-* metadata.py expects there to be one rgb orthomosaic, one digital surface model, and looks for a multispectral orthomosaic to include. if multiple rgb or dsm files are included, it uses the most recent file. workaround until I decide if it's worth it for TFS's workflow: split out products into separate folders, add a line to input csv for each folder but shared metadata, and copy/paste to add in spatial rasters to one single output eml. 
-
+* most hard-coded values are found in lib/adc_template or the various txt files, which makes it annoying to track down edits.
 
