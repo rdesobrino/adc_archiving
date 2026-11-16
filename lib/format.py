@@ -66,13 +66,20 @@ def make_pi_creators(pi_dic):
         text = text.replace("orc_id", pi_dic["OrcID"].strip())
     return text  ## return completed creator text
 
-def make_nsf_project(project):
-    with open(os.path.join(cwd, "nsf_project.txt"), "r") as nsf_proj:
-        text = nsf_proj.read()
-        for key in project:
-            text = text.replace(key, project[key])
-        text = text.replace("gname", project["First"]) ## I am lazy
-        text = text.replace("sname", project["Last"]) ## apologies fellow Spanish-last-name-havers
+def make_nsf_project(pis, project_info):   ## TODO - not actually just NSF project, change
+    main_proj = project_info[pis[0]] ## uses the project of the first pi listed
+    with open(os.path.join(cwd, "create_project.txt"), "r") as proj:
+        text = proj.read()
+        main_proj["people"] = ""
+        main_proj["fund_id"] = ""
+        if main_proj["funder_"] == 'NSF':
+            main_proj["funder_"] = "National Science Foundation"
+            main_proj["fund_id"] = "https://doi.org/10.13039/100000001"
+        main_proj["people"] = ""
+        for pi in pis:
+            main_proj["people"] += "<individualName>\n<givenName>" +project_info[pi]["First"]+"</givenName>\n<surName>"+project_info[pi]["Last"]+"</surName>\n</individualName>\n<role>" + project_info[pi]["Role"] + "</role>"
+        for key in main_proj:
+            text = text.replace(key, main_proj[key])
     return text
 
 def gps_methodology(tif, method, ref):
@@ -90,15 +97,15 @@ def gps_methodology(tif, method, ref):
 
     dist = 0
 
-    if ref in bases:  ### TODO turn into function
-        center = [float(x) for x in tif["center"].split(",")]
+    if ref in bases:
+        center = [float(x) for x in tif["center_xy"].split(",")]
         dist = round((math.dist(center, bases[ref][1])) / 1000, 2)
         if dist > 20:
             print("The reported distance between the flight and corresponding base is more than 20km")
 
     gps_desc = {"GCPs" : "Ground Control Points were deployed throughout the survey area to georeference the dataset. ",
-                "Emlid Reach M2" : "Image coordinates were collected using Emlid Reach M2 kit and post-processed in Emlid Studio 1.1 software. ",
-                "KlauPPK" : "Image coordinates were collected using KlauPPK kit and post-processed in KlauPPK Version 7.22.1 (Klau Geomatics). ",
+                "Emlid Reach M2" : "Image coordinates were collected using an Emlid Reach M2. ",
+                "KlauPPK" : "Image coordinates were collected using a KlauPPK kit and post-processed in KlauPPK Version 7.22.1 (Klau Geomatics). ",
                 "align" : ""}
 
     if method == "GCPs" and dist > 0:
@@ -119,3 +126,30 @@ def gps_methodology(tif, method, ref):
         gps_meth = ppk[method]
 
     return gps_desc[method], gps_meth
+
+def describe_raster(fpath, tif, mica, dem_ct, ortho_ct):
+    ## raster specific metadata
+    keys = {}  ## todo why are we doing all of this when we already have done it
+    keys["bobo"] = tif["bobo"]  ## only need one bounding box, RGB and MS will be slightly different but ah well
+    keys["hcs"] = tif["hcs"]  ## assumes all rasters are in same crs for description, but each gets written separately at data-level
+    keys["_name"] = os.path.basename(fpath)
+    keys["_res"] = str(tif["res"])
+    keys["_rows"] = str(tif["rows"])
+    keys["_cols"] = str(tif["cols"])
+    keys["center_xy"] = str(tif["center"])
+    if tif["bands"] == 1:
+        keys["txt"] = r"lib\dem_spatialRaster.txt"
+        dem_ct += 1
+    elif tif["bands"] == 3:
+        keys["txt"] = r"lib\rgb_ortho_spatialRaster.txt"
+        ortho_ct += 1
+    elif mica == 'Micasense RedEdge-P':
+        keys["txt"] = r"lib\rededge_p_spatialRaster.txt"
+        ortho_ct += 1
+    elif mica == 'Micasense RedEdge-MX':
+        keys["txt"] = r"lib\rededge_mx_spatialRaster.txt"
+        ortho_ct += 1
+    if tif["bands"] not in [1, 3, 4, 6, 7] :  ##todo really what on earth am I catching with this wide net
+        print("Double-check the raster bands. This rasters has ", tif["bands"], "bands.")
+
+    return keys, dem_ct, ortho_ct

@@ -7,10 +7,6 @@
 	    <awardUrl>https://www.nsf.gov/awardsearch/showAward?AWD_ID=award_no</awardUrl>
       </award>
       <personnel>
-	    <individualName>
-		  <givenName>gname</givenName>
-		  <surName>sname</surName>
-	    </individualName>
-	    <role>principalInvestigator</role>
+	    people
      </personnel>
  

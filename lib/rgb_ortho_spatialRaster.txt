@@ -1,5 +1,5 @@
 <spatialRaster id="adc_adc">
-      <entityName>rgb_name</entityName>
+      <entityName>_name</entityName>
       <entityDescription>RGB Orthomosaic. Red (Band 1), Green (Band 2), Blue (Band 3).</entityDescription>
       <attributeList>
 	   <attribute id="red_id">
@@ -46,7 +46,7 @@
         </attribute>
       </attributeList>
       <spatialReference>
-        <horizCoordSysName>h_crs</horizCoordSysName>
+        <horizCoordSysName>hcs</horizCoordSysName>
       </spatialReference>
       <horizontalAccuracy>
         <accuracyReport>unknown</accuracyReport>
@@ -54,12 +54,12 @@
       <verticalAccuracy>
         <accuracyReport>unknown</accuracyReport>
       </verticalAccuracy>
-      <cellSizeXDirection>rgb_res</cellSizeXDirection>
-      <cellSizeYDirection>rgb_res</cellSizeYDirection>
+      <cellSizeXDirection>_res</cellSizeXDirection>
+      <cellSizeYDirection>_res</cellSizeYDirection>
       <numberOfBands>3</numberOfBands>
       <rasterOrigin>Upper Left</rasterOrigin>
-      <rows>rgb_rows</rows>
-      <columns>rgb_cols</columns>
+      <rows>_rows</rows>
+      <columns>_cols</columns>
       <verticals>1</verticals>
       <cellGeometry>pixel</cellGeometry>
     </spatialRaster>

@@ -44,7 +44,7 @@ if  __name__ == "__main__":
             if file.upper().endswith('.TIF'):
                 fields_dic[dataset]["tifs"][file] = gdalinfo.get_gdal(file)  ## creates raster metadata file from gdal
 
-        with open(os.path.join(cwd, r"lib\adc_template_2026.xml"), "r") as template: ## TODO change to pcik tmeplate based on year
+        with open(os.path.join(cwd, r"lib\adc_template_2026.xml"), "r") as template: ## TODO change to pcik tmeplate based on year?
             # print("You are using the 2026 template")
             template = template.read()
 
@@ -70,22 +70,15 @@ if  __name__ == "__main__":
             ## add spatialRaster objects for each tif
             data = template.find("</dataset>")
             eml.write(template[nsf:data])
-            templates = []
-            if mapped["dem_name"]: ## queries by input information, not actual tifs tho
-                templates.append(r"lib\dem_spatialRaster.txt")
-            if mapped["rgb_v"]:
-                templates.append(r"lib\rgb_ortho_spatialRaster.txt")
-            if mapped["ms_v"] == "and Micasense RedEdge-P multispectral sensor":
-                templates.append(r"lib\ms_p_spatialRaster.txt")
-            elif mapped["ms_v"] != "":
-                templates.append(r"lib\ms_spatialRaster.txt")
 
-            for raster_template in templates:
-                with open(os.path.join(cwd, raster_template), "r") as data_template:
+            for raster in fields_dic[dataset]['tifs'].keys():
+                with open(fields_dic[dataset]['tifs'][raster]['txt'], "r") as data_template:
                     data_template = data_template.read()
-                for key in mapped.keys():  ## replace keywords with values
-                    data_template = data_template.replace(key, mapped[key])
+                for key in fields_dic[dataset]['tifs'][raster].keys():  ## replace keywords with values
+                    if key != 'bobo':  ## embarrassing
+                        data_template = data_template.replace(key, fields_dic[dataset]['tifs'][raster][key])
                 eml.write(data_template)
+
             eml.write(template[data:])
 
 

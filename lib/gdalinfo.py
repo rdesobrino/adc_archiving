@@ -32,6 +32,7 @@ def get_hcs(info):
     elif hcs == "NAD83(2011) / UTM zone 5N":
         return "NAD_1983_UTM_Zone_5N"
     print("This file is in ", hcs, " and might mess up the distance calculations.")
+    print(info)
     return hcs
 
 def get_res(info):
@@ -49,7 +50,7 @@ def get_rows(info):
     return rows
 
 def get_cols(info):
-    cols = info[info.find("Size is ") + len("Size is "):].split(',')[0]
+    cols = info[info.find("Size is ") + len("Size is "):].split(',')[1]
     return cols
 
 def get_gdal(tif_path):  ##

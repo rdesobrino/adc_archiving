@@ -14,52 +14,36 @@ def mapper(keys, data_fields, people_info):
         keys[attr_id] = format.attr_id()
 
     ## raster specific metadata
+    dem_ct = 0
+    ortho_ct = 0
     for tif in data_fields["tifs"]:
-        bobo = data_fields["tifs"][tif]["bobo"] ## only need one bounding box, RGB and MS will be slightly different but ah well
-        keys["h_crs"] = data_fields["tifs"][tif]["hcs"] ## assumes all rasters are in same crs for description, but each gets written separately at data-level
-        if data_fields["tifs"][tif]["bands"] == 1: ## TODO call separate function, identifies tif type, returns {tif_name:[res, spatialRaster text}
-            keys["dem_name"] = os.path.basename(tif)
-            keys["dem_res"] = str(data_fields["tifs"][tif]["res"])
-            keys["dem_rows"]  = str(data_fields["tifs"][tif]["rows"])
-            keys["dem_cols"] = str(data_fields["tifs"][tif]["cols"])
-        elif data_fields["tifs"][tif]["bands"] == 3:
-            keys["rgb_name"] = os.path.basename(tif)
-            keys["rgb_res"] = "RGB orthomosaic: " + str(data_fields["tifs"][tif]["res"]) + ", "
-            keys["rgb_rows"]  = str(data_fields["tifs"][tif]["rows"])
-            keys["rgb_cols"] = str(data_fields["tifs"][tif]["cols"])
-        elif data_fields["tifs"][tif]["bands"] >= 3: ## anything over 3 bands should be multispectral
-            keys["ms_name"] = os.path.basename(tif)
-            keys["ms_px_desc"] = ", multispectral orthomosaic: " + str(data_fields["tifs"][tif]["res"]) + "m"
-            keys["ms_res"]= str(data_fields["tifs"][tif]["res"])
-            keys["ms_rows"]  = str(data_fields["tifs"][tif]["rows"])
-            keys["ms_cols"] = str(data_fields["tifs"][tif]["cols"])
-            if data_fields["tifs"][tif]["bands"] != 6 and data_fields["date"][:2] != "26":
-                print("Double-check the raster bands. This rasters has ", data_fields["tifs"][tif]["bands"], "bands." )
+        data_fields["tifs"][tif], dem_ct, ortho_ct = format.describe_raster(tif, data_fields["tifs"][tif], data_fields["ms_v"], dem_ct, ortho_ct)
 
-    sensor_ct = 0
     if data_fields["rgb_v"]: ## if RGB camera used
         keys["rgb_desc"] = "true-color orthomosaic, "
         keys["rgb_meth"] = "RGB imagery was captured with a " + data_fields["rgb_v"] + " on a gimbal at " + data_fields[
             "f_alt"] + " meters altitude at " + data_fields["f_spd"] + " m/s with along-track overlap of " + \
                            data_fields["f_flap"] + "% and across-track overlap of " + data_fields["f_slap"] + "%."
-        sensor_ct += 1
 
     if data_fields["ms_v"]: ## only if a multispectral camera was used
-        keys["ms_desc"] =  ", and multispectral orthomosaic"
+        keys["ms_px_desc"] = ", multispectral orthomosaic: " + keys["ms_res"] + "m"
+        keys["ms_desc"] =  " and multispectral orthomosaic"
         keys["ms_v"] =  data_fields["ms_v"] + " multispectral sensor"
         keys["ms_meth"] = "A " + data_fields["ms_v"] + " was flown nadir at " + data_fields[
             "m_alt"] + " meters altitude at " + data_fields["m_spd"] + " m/s with along-track overlap of " + data_fields[
                               "m_flap"] + "% and across-track overlap of " + data_fields[
                               "m_slap"] + "%. Calibration photos were taken at the start of each flight, and/or when lighting conditions changed."
-        sensor_ct += 1
 
-    count_orthos = ["", "", "s"]       ## honestly embarrassing way to handle some specific grammar
-    rgb_and_ortho = ["", "", " and"]
-    keys["ortho_s"] = count_orthos[sensor_ct]
-    keys["rgb_and_ortho"] = rgb_and_ortho[sensor_ct]
+    if ortho_ct > 1:    ## honestly embarrassing way to handle some specific grammar
+        keys["ortho_s"] = "s"              ## todo if mult of one sensor need to add s
+        keys["rgb_and_ortho"] = " and"     ##todo not inherently true
+    if dem_ct > 1:
+        keys["dsm_s"] = "s"
 
-    keys["gps_desc"], keys["gps_meth"] = format.gps_methodology(data_fields["tifs"][tif], data_fields["gps_meth"], data_fields["gps_ref"])
+    keys["gps_desc"], keys["gps_meth"] = format.gps_methodology(data_fields["tifs"][tif], data_fields["gps_meth"], data_fields["gps_ref"]) ## from centerpoint of first tif
 
+    bobo = data_fields["tifs"][tif]["bobo"]  ## only need one bounding box, RGB and MS will be slightly different but ah well
+    keys["h_crs"] = data_fields["tifs"][tif]["hcs"] ## assumes all rasters are in same crs for description, but each gets written separately at data-level
     keys["webo"] = "-" + str(bobo[0][0])
     keys["ebo"] = "-" + str(bobo[1][0])
     keys["nobo"] = str(bobo[0][1])
@@ -68,7 +52,7 @@ def mapper(keys, data_fields, people_info):
     if data_fields["wx"]:
         keys["f_wx"] = "Flight occurred in " + data_fields["wx"] + " conditions."
 
-    pis = data_fields["pis_last"].split(" ")
+    pis = data_fields["pis_last"].split(" ")  ## hilarious that I, Rachel de Sobrino, condone this method
     keys["fteam"] = ""
     keys["project_info"] = ""
     for person in pis:
@@ -78,18 +62,22 @@ def mapper(keys, data_fields, people_info):
             for key in person_info:
                 if key in keys.keys():
                    keys[key] = person_info[key]
-                if person_info[key] == "NSF":                                 ## TODO add non-NSF projects
-                    keys["project_info"]=format.make_nsf_project(person_info) ## TODO: this currently only lists one PI on the project
+            keys["pi_name"] += person_info["pi"] + ", "
         else:
             print("Who is ", person, "?????")
-        keys["pi_name"] += person_info["pi"] + ", "
-    keys["pi_name"] += "and the '" + person_info["project_name"] + "' project"
+
+    if person_info["project_name"]:  ## TODO remove comma if no project name?
+        keys["pi_name"] += "as part of the '" + person_info["project_name"] + "' project"
+
+    keys["project_info"] = format.make_nsf_project(pis, people_info)
 
     team = data_fields["team"].split(" ")
     proc = data_fields["proc"].split(" ")
     for person in proc:
         if person not in team:
             team.append(person)
+    if "RF" not in team and int(data_fields["date"][:2]) < 26:
+        team.append("RF")
     for person in team:
         keys["fteam"] += format.make_tfs_creators(person)
 

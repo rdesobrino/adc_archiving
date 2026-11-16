@@ -1,5 +1,5 @@
 <spatialRaster id="adc_adc">
-      <entityName>dem_name</entityName>
+      <entityName>_name</entityName>
       <entityDescription>Digital Surface Model; Elevation units are meters above mean sea level.</entityDescription>
       <attributeList>
         <attribute id="dsm_id">  
@@ -22,7 +22,7 @@
         </attribute>
       </attributeList>
       <spatialReference>
-        <horizCoordSysName>h_crs</horizCoordSysName>
+        <horizCoordSysName>hcs</horizCoordSysName>
       </spatialReference>
       <horizontalAccuracy>
         <accuracyReport>unknown</accuracyReport>
@@ -30,12 +30,12 @@
       <verticalAccuracy>
         <accuracyReport>unknown</accuracyReport>
       </verticalAccuracy>
-      <cellSizeXDirection>dem_res</cellSizeXDirection>
-      <cellSizeYDirection>dem_res</cellSizeYDirection>
+      <cellSizeXDirection>_res</cellSizeXDirection>
+      <cellSizeYDirection>_res</cellSizeYDirection>
       <numberOfBands>1</numberOfBands>
       <rasterOrigin>Upper Left</rasterOrigin>
-      <rows>18109</rows>
-      <columns>17740</columns>
+      <rows>_rows</rows>
+      <columns>_cols</columns>
       <verticals>1</verticals>
       <cellGeometry>pixel</cellGeometry>
 </spatialRaster>

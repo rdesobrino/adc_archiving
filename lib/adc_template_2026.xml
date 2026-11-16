@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="urn:uuid:ffa9eec8-8737-4c33-9bdc-84672638169c" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="knb">
   <dataset id="adc_adc">
-    <title>Orthomosaicortho_s and Digital Surface Model of s_sitel_area, Alaska on date_desc</title>
+    <title>Orthomosaicortho_s and Digital Surface Modeldsm_s of s_sitel_area, Alaska on date_desc</title>
     <creator id="1221893104692641">
       <individualName>
         <givenName>Rachel</givenName>
@@ -21,7 +21,7 @@
     </creator>
     <pubDate>2026</pubDate>
     <abstract>
-      <para>This dataset includes a rgb_descDigital Surface Model (DSM)ms_desc of s_sitel_area, Alaska. Imagery was collected by the Toolik Field Station GIS Department using a drone_v tricopter with a rgb_vrgb_and_ortho ms_v. gps_descThis data was collected in support of research by pi_name on kword_desc.</para>
+      <para>This dataset includes a rgb_descDigital Surface Modeldsm_s (DSM)ms_desc of s_sitel_area, Alaska. Imagery was collected by the Toolik Field Station GIS Department using a drone_v tricopter with a rgb_vrgb_and_ortho ms_v. gps_descThis data was collected in support of research by pi_name on kword_desc.</para>
     </abstract>
     <keywordSet>
       <keyword>Drone</keyword>
@@ -110,13 +110,13 @@
       </methodStep>
       <methodStep>
         <description>
-          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow described in the Agisoft Metashape Users Manual (Agisoft LLC, 2022). The spatial resolution of the data products are: rgb_resDSM: dem_resmms_px_desc. Data products are in h_crs and NAVD88 Geoid12B (Alaska).</para>
+          <para>Images were processed in Agisoft Metashape v2.2.1 or earlier using a standard photogrammetry workflow described in the Agisoft Metashape Users Manual (Agisoft LLC, 2022). The spatial resolution of the data products can be found in the Spatial Raster metadata below. Data products are in h_crs and NAVD88 Geoid12B (Alaska).</para>
         </description>
       </methodStep>
       <sampling>
         <studyExtent>
           <description>
-            <para>UAV flight of s_sitel_area, Alaska at field site selected by PI pi_name. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Surface Model of s_sitel_area, Alaska" or contact Toolik Field Station GIS for availability.</para>
+            <para>UAV flight of s_sitel_area, Alaska at field site selected by pi_name. To search for any related UAV data, browse ADC for "Orthomosaics and Digital Surface Model of s_sitel_area, Alaska" or contact Toolik Field Station GIS for availability.</para>
           </description>
         </studyExtent>
         <samplingDescription>
