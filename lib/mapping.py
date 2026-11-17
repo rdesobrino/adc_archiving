@@ -10,9 +10,6 @@ def mapper(keys, data_fields, people_info):
     keys["f_start"] = data_fields["f_start"] + ":00-09:00"
     keys["f_stop"] = data_fields["f_stop"] + ":00-09:00"
 
-    for attr_id in ["red_id", "green_id", "blue_id", "dsm_id", "ms_id_1", "ms_id_2", "ms_id_3", "ms_id_4", "ms_id_5", "ms_id_6", "ms_id_7"]:
-        keys[attr_id] = format.attr_id()
-
     ## raster specific metadata
     dem_ct = 0
     ortho_ct = 0

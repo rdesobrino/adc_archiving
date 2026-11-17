@@ -130,13 +130,17 @@ def gps_methodology(tif, method, ref):
 def describe_raster(fpath, tif, mica, dem_ct, ortho_ct):
     ## raster specific metadata
     keys = {}  ## todo why are we doing all of this when we already have done it
-    keys["bobo"] = tif["bobo"]  ## only need one bounding box, RGB and MS will be slightly different but ah well
-    keys["hcs"] = tif["hcs"]  ## assumes all rasters are in same crs for description, but each gets written separately at data-level
+    keys["bobo"] = tif["bobo"]  ## todo and again: we define bobo in three separate scripts let alone functions!!
+    keys["hcs"] = tif["hcs"]
     keys["_name"] = os.path.basename(fpath)
     keys["_res"] = str(tif["res"])
     keys["_rows"] = str(tif["rows"])
     keys["_cols"] = str(tif["cols"])
     keys["center_xy"] = str(tif["center"])
+
+    for id in ["red_id", "green_id", "blue_id", "dsm_id", "ms_id_1", "ms_id_2", "ms_id_3", "ms_id_4", "ms_id_5", "ms_id_6", "ms_id_7"]:
+        keys[id] = attr_id()  ## TODO remove from adc_keys maybe?
+
     if tif["bands"] == 1:
         keys["txt"] = r"lib\dem_spatialRaster.txt"
         dem_ct += 1

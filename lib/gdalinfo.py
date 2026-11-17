@@ -51,6 +51,7 @@ def get_rows(info):
 
 def get_cols(info):
     cols = info[info.find("Size is ") + len("Size is "):].split(',')[1]
+    cols = cols.split("\n")[0].strip()
     return cols
 
 def get_gdal(tif_path):  ##
