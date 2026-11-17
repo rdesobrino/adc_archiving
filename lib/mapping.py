@@ -10,10 +10,9 @@ def mapper(keys, data_fields, people_info):
     keys["f_start"] = data_fields["f_start"] + ":00-09:00"
     keys["f_stop"] = data_fields["f_stop"] + ":00-09:00"
 
-    ## raster specific metadata
     dem_ct = 0
     ortho_ct = 0
-    for tif in data_fields["tifs"]:
+    for tif in data_fields["tifs"]:     ## raster specific metadata
         data_fields["tifs"][tif], dem_ct, ortho_ct = format.describe_raster(tif, data_fields["tifs"][tif], data_fields["ms_v"], dem_ct, ortho_ct)
 
     if data_fields["rgb_v"]: ## if RGB camera used

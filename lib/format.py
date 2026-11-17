@@ -139,7 +139,7 @@ def describe_raster(fpath, tif, mica, dem_ct, ortho_ct):
     keys["center_xy"] = str(tif["center"])
 
     for id in ["red_id", "green_id", "blue_id", "dsm_id", "ms_id_1", "ms_id_2", "ms_id_3", "ms_id_4", "ms_id_5", "ms_id_6", "ms_id_7"]:
-        keys[id] = attr_id()  ## TODO remove from adc_keys maybe?
+        keys[id] = attr_id()
 
     if tif["bands"] == 1:
         keys["txt"] = r"lib\dem_spatialRaster.txt"

@@ -31,7 +31,7 @@ def get_hcs(info):
         return "NAD_1983_UTM_Zone_6N"
     elif hcs == "NAD83(2011) / UTM zone 5N":
         return "NAD_1983_UTM_Zone_5N"
-    print("This file is in ", hcs, " and might mess up the distance calculations.")
+    print("This file is in ", hcs, " and I am about to break your script over it.")
     print(info)
     return hcs
 
